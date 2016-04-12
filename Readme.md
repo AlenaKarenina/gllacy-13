@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алена Каренина](https://up.htmlacademy.ru/htmlcss/13/user/158812).
-* Наставник: [Юлия Антонова] (https://up.htmlacademy.ru/htmlcss/13/user/39082).
+* Наставник: [Юлия Антонова](https://up.htmlacademy.ru/htmlcss/13/user/39082).
 
 ---
 
