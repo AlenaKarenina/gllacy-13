@@ -97,35 +97,35 @@
 
             <div class="hit">
                 <div class="item">
-                    <img class="hit-icon" src="img/hit.png" width="61" height="61" alt="Хит">
                     <div class="item-ice">
-                        <img class="image-item" src="img/item-1.png" width="267" height="267" alt="Мороженое-хит-1">
-                        <p class="price">310 <img src="img/rub.svg" width="32" height="37" alt="Рубль">/кг</p>
+                        <div class="hit-icon">ХИТ</div>
+                        <a href="#"><img class="image-item" src="img/item-1.png" width="267" height="267" alt="Мороженое-хит-1"></a>
+                        <p class="price">310 <span class="rub"></span>/кг</p>
                     </div>
                     <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
                 <div class="item">
-                    <img class="hit-icon" src="img/hit.png" width="61" height="61" alt="Хит">
                     <div class="item-ice">
-                        <img class="image-item" src="img/item-2.png" width="267" height="267" alt="Мороженое-хит-2">
-                        <p class="price">380 <img src="img/rub.svg" width="32" height="37" alt="Рубль">/кг</p>
+                        <div class="hit-icon">ХИТ</div>
+                        <a href="#"><img class="image-item" src="img/item-2.png" width="267" height="267" alt="Мороженое-хит-2"></a>
+                        <p class="price">380 <span class="rub"></span>/кг</p>
                     </div>
                     <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               </div>
 
                 <div class="item">
-                    <img class="hit-icon" src="img/hit.png" width="61" height="61" alt="Хит">
                     <div class="item-ice">
-                        <img class="image-item" src="img/item-3.png" width="267" height="267" alt="Мороженое-хит-3">
-                        <p class="price">355 <img src="img/rub.svg" width="32" height="37" alt="Рубль">/кг</p>
+                        <div class="hit-icon">ХИТ</div>
+                        <a href="#"><img class="image-item" src="img/item-3.png" width="267" height="267" alt="Мороженое-хит-3"></a>
+                        <p class="price">355 <span class="rub"></span>/кг</p>
                     </div>
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </div>
                 <div class="item">
-                    <img class="hit-icon" src="img/hit.png" width="61" height="61" alt="Хит">
                     <div class="item-ice">
-                        <img class="image-item" src="img/item-4.png" width="267" height="267" alt="Мороженое-хит-4">
-                        <p class="price">415 <img src="img/rub.svg" width="32" height="37" alt="Рубль">/кг</p>
+                        <div class="hit-icon">ХИТ</div>
+                        <a href="#"><img class="image-item" src="img/item-4.png" width="267" height="267" alt="Мороженое-хит-4"></a>
+                        <p class="price">415 <span class="rub"></span>/кг</p>
                     </div>
                     <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 </div>
@@ -134,19 +134,15 @@
                 <p class="about-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
                 <ul>
                     <li>
-                        <img src="img/ice-icon.gif" width="47" height="47" alt="Мороженое">
                         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                     </li>
                     <li>
-                        <img src="img/list-icon.gif" width="47" height="47" alt="Экологически чистое сырье">
                         <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
                     </li>
                     <li>
-                        <img src="img/kine-icon.gif" width="47" height="47" alt="Фермерские хозяйства">
                         <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                     </li>
                     <li>
-                        <img src="img/thermometer-icon.gif" width="47" height="47" alt="Термопак">
                         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус</p>
                     </li>
                 </ul>
@@ -175,6 +171,16 @@
                     (с 10 до 20 ежедневно)
                 </p>
                 <a class="btn btn-primary" href="#">Форма обратной связи</a>
+                <div class="feedback">
+                    <h3>Мы обязательно вам ответим!</h3>
+                    <a href="#">X</a>
+                    <form class="feedback-form" action="#" method="post">
+                        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
+                        <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+                        <textarea name="feedback-text" id="feedback-text" cols="30" rows="10">Напишите что-нибудь...</textarea>
+                        <button class="btn btn-primary">Отправить</button>
+                    </form>
+                </div><!--Всплывающее окно с формой обратной связи-->
             </div>
         </div><!--Блог с картой-->
         <footer class="footer">
