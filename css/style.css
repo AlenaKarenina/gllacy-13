@@ -136,7 +136,9 @@ ul {
 .slider-slide1 img,
 .slider-slide2 img,
 .slider-slide3 img {
-  display: block;
+  display: inline-block;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
 }
 .slider-slide2,
 .slider-slide3 {
