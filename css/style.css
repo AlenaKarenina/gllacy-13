@@ -50,12 +50,12 @@ h4 {
 /*Шапка сайта*/
 .main-header {
   padding-top: 10px;
-  margin-bottom: 0;
   width: auto;
 }
 .main-navigation {
   float: left;
   width: 375px;
+  font-size: 0;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -64,18 +64,22 @@ h4 {
   display: inline-block;
   min-height: 63px;
   width: 153px;
+  margin-right: 28px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .user-block {
   float: right;
   width: 267px;
+  font-size: 0;
+  text-align: right;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .phone-header {
   float: right;
   width: 267px;
+  text-align: right;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -94,6 +98,10 @@ ul {
 .user-block .cart {
   display: inline-block;
 }
+.user-block .search-list,
+.user-block .login-list {
+  padding-right: 10px;
+}
 .user-block .search-list a,
 .user-block .login-list a {
   font-size: 16px;
@@ -105,9 +113,17 @@ ul {
   font-size: 16px;
   line-height: 18px;
   color:#ffffff;
-  text-decoration:none;
 }
-
+.main-navigation li {
+  padding-right: 28px;
+}
+.main-navigation li:last-child {
+  padding-right: 0;
+}
+.user-block .cart {
+  font-size: 14px;
+  line-height: 16px;
+}
 /*Блок со слайдером*/
 .slider {
   min-height: 881px;
@@ -171,6 +187,11 @@ ul {
 }
 .item:nth-child(4n) {
   margin-right: 0;
+}
+/*Каталог*/
+.goods {
+  font-size: 0;
+  width: auto;
 }
 
 /*Блок с информацией о магазине*/
@@ -290,12 +311,12 @@ ul {
   text-decoration: none;
 }
 
-
 .search-form,
 .cart-tooltip,
 .login-form {
   display: none;
 }
+
 /*Хлебные крошки*/
 .breadcrumbs {
   /*для визуального выделения элемента*/
@@ -310,12 +331,6 @@ ul {
 }
 .breadcrumbs a {
   color: #ffffff;
-}
-
-/*Каталог*/
-.goods {
-  font-size: 0;
-  width: auto;
 }
 
 /*Переключатель страниц*/
