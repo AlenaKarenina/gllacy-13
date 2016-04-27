@@ -156,7 +156,6 @@ ul {
 
 /*Блок с хитами*/
 .hit {
-  margin-bottom: 40px;
   font-size: 0;
   width: auto;
 }
@@ -166,6 +165,7 @@ ul {
   vertical-align: top;
   font-size: 16px;
   width: 267px;
+  margin-bottom: 40px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -281,7 +281,6 @@ ul {
 
 /*Каталог*/
 .goods {
-  margin-bottom: 40px;
   font-size: 0;
   width: auto;
 }
@@ -297,27 +296,49 @@ ul {
 }
 /*Фильтры*/
 .filters {
-
+  margin-bottom: 40px;
   /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  outline: solid orange 1px;
 }
 .select {
-
+  display: inline-block;
+  vertical-align: top;
+  width: 192px;
+  margin-right: 15px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .range-controls {
-
+  display: inline-block;
+  vertical-align: top;
+  width: 217px;
+  margin-right: 15px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .fatness {
-
+  display: inline-block;
+  vertical-align: top;
+  width: 412px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .filler {
-
+  display: inline-block;
+  vertical-align: top;
+  width: 700px;
+  margin-right: 15px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
+}
+.btn-filter {
+  display: inline-block;
+  vertical-align: ;
+  width: 144px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.fatness>ul>li,
+.filler>ul>li {
+  display: inline-block;
 }
