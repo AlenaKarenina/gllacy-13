@@ -1,5 +1,6 @@
-html,
 body {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -30,4 +31,293 @@ h4 {
   line-height: 22px;
   color: #323232;
   font-weight: normal;
+}
+
+.container {
+  min-width: 846px;
+  max-width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
+  /*для визуального выделения элемента*/
+  outline: solid yellow 1px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Шапка сайта*/
+.main-header {
+  padding-top: 10px;
+  margin-bottom: 0;
+  width: auto;
+}
+.main-navigation {
+  float: left;
+  width: 375px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.logo {
+  float: left;
+  display: inline-block;
+  min-height: 63px;
+  width: 153px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.user-block {
+  float: right;
+  width: 267px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.phone-header {
+  float: right;
+  width: 267px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-navigation>ul>li{
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 22px;
+}
+.user-block .search-list,
+.user-block .login-list,
+.user-block .cart {
+  display: inline-block;
+}
+.user-block .search-list a,
+.user-block .login-list a {
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffffff;
+  text-decoration:none;
+}
+.main-navigation a{
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffffff;
+  text-decoration:none;
+}
+
+/*Блок со слайдером*/
+.slider {
+  min-height: 881px;
+  margin-bottom: 40px;
+  text-align: center;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.slider-slide2,
+.slider-slide3 {
+  display: none;
+}
+.slider-controls {
+  width: 80px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.slider-slogan {
+  color: #ffffff;
+  font-size: 60px;;
+  line-height: 60.35px;
+  font-family: "Roboto Black", sans-serif;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+
+/*Блок с баннерами*/
+.banner {
+  width: auto;
+  margin-bottom: 40px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.banner-left {
+  float: left;
+  background-image: url(../img/razz.png);
+  width: 560px;
+  min-height: 229px;
+}
+.banner-right {
+  float: right;
+  background-image: url(../img/chocolate.png);
+  width: 560px;
+  min-height: 229px;
+}
+
+/*Блок с хитами*/
+.hit {
+  margin-bottom: 40px;
+  font-size: 0;
+  width: auto;
+}
+.item {
+  display: inline-block;
+  margin-right: 26px;
+  vertical-align: top;
+  font-size: 16px;
+  width: 267px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/*Блок с информацией о магазине*/
+.about {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  background-image: url(../img/texture-wafer.png);
+  margin-bottom: 40px;
+  color: #323232;
+}
+.about-title {
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0;
+}
+.about li {
+  display: inline-block;
+  width: 565px;
+  /*для визуального выделения элемента*/
+  outline: solid gray 1px;
+}
+
+/*Блок с новостями и рассылкой*/
+.blog {
+  margin-bottom: 40px;
+}
+.news {
+  float: left;
+  background-image: url(../img/blog-image.jpg);
+  width: 560px;
+  min-height: 220px;
+}
+.distribution {
+  float: right;
+  background-color: #f8f7f4;
+  width: 560px;
+  min-height: 220px;
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+/*Блог с картой*/
+.map {
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  min-height: 430px;
+  margin: 0 auto;
+}
+.map-address {
+  float: right;
+  background-color: #fefefe;
+  width: 302px;
+  margin-right: 27px;
+  margin-top: 62px;
+  color: #323232;
+  font-size: 14px;
+}
+.feedback {
+  display: none;
+}
+/*подвал сайта*/
+.footer {
+  margin-top: 40px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.footer-social {
+  float: left;
+  width: 185px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.footer-info {
+  float: left;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.footer-info > ul > li {
+  display: inline-block;
+}
+.footer-copyright {
+  float: right;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+
+.search-form,
+.cart-tooltip,
+.login-form {
+  display: none;
+}
+/*Хлебные крошки*/
+.breadcrumbs {
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.breadcrumbs > li {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: text-top;
+  font-size: 14px;
+  line-height: 16px;
+}
+.breadcrumbs a {
+  color: #ffffff;
+}
+
+/*Каталог*/
+.goods {
+  margin-bottom: 40px;
+  font-size: 0;
+  width: auto;
+}
+
+/*Переключатель страниц*/
+.paginator {
+  text-align: right;
+}
+.paginator > a,
+.paginator > span {
+  display: inline-block;
+  vertical-align: top;
+}
+/*Фильтры*/
+.filters {
+
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.select {
+
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.range-controls {
+
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.fatness {
+
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.filler {
+
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
 }

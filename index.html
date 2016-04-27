@@ -8,18 +8,17 @@
     <body>
         <header>
             <div class="container">
-                <div class="main-header">
-                    <img src="img/logo.png" width="153" height="63" alt="Логотип GllacyShop">
+                <div class="main-header clearfix">
+                    <img class="logo" src="img/logo.png" width="153" height="63" alt="Логотип GllacyShop">
                     <nav class="main-navigation">
                         <ul>
                             <li>
                                 <a href="#">Каталог</a>
                                 <ul>
-                                    <li><a href="#"><b>Новинки</b></a></li>
-                                    <li><a href="catalog.html">Сливочное</a></li>
+                               <!-- <li><a href="#"><b>Новинки</b></a></li>
                                     <li><a href="#">Щербеты</a></li>
                                     <li><a href="#">Фруктовый лед</a></li>
-                                    <li><a href="#">Мелорин</a></li>
+                                    <li><a href="#">Мелорин</a></li> -->
                                 </ul><!-- Подменю-->
                             </li>
                             <li><a href="#">Доставка и оплата</a></li>
@@ -29,21 +28,21 @@
                     <div class="user-block">
                         <div class="search-list">
                             <a href="#">Поиск</a>
-                            <form class="search-form" action="https://echo.htmlacdemy.ru" method="post">
+                      <!--  <form class="search-form" action="https://echo.htmlacdemy.ru" method="post">
                                 <input class="search" type="text" name="search" placeholder="Что ищем?">
-                            </form>
+                            </form> -->
                         </div><!--Выпадающая форма поиска-->
                         <div class="login-list">
                             <a href="#" class="login-header">Вход</a>
-                            <form class="login-form" action="https://echo.htmlacdemy.ru" method="post">
+                      <!--  <form class="login-form" action="https://echo.htmlacdemy.ru" method="post">
                                 <input class="mail" type="email" name="mail-input" placeholder="Электронная почта">
                                 <input class="password" type="password" name="password-input" placeholder="Пароль">
                                 <button class="btn btn-primary" type="submit">Войти</button>
                                 <div class="links">
                                     <a href="#">Забыли пароль?</a>
                                     <a href="#">Новая регистрация</a>
-                                </div><!--блок для ссылок-->
-                            </form>
+                                </div>
+                            </form> -->
                         </div><!--Выпадающая форма для входа-->
                         <div class="cart">
                             <p class="cart-handler">Пусто</p>
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container clearfix">
                 <div class="phone-header">
                     <p>C 10 до 20, ежедневно<br><b>8 812 450-25-25</b></p>
                 </div>
@@ -59,6 +58,23 @@
         </header>
         <main class="container">
             <div class="slider">
+                <div class="slider-inner">
+                    <div class="slider-slide1">
+                        <img src="img/ice-1.png" width="1045" height="881" alt="slider-1">
+                        <p class="slider-slogan">Крем-брюле и пломбир<br> с малиновым джемом</p>
+                        <a class="btn btn-both" href="#">Давайте оба!</a>
+                    </div>
+                    <div class="slider-slide2">
+                        <img src="img/ice-2.png" width="1065" height="859" alt="slider-2">
+                        <p class="slider-slogan">Шоколадный пломбир<br> и лимонный сорбет</p>
+                        <a class="btn btn-both" href="#">Давайте оба!</a>
+                    </div>
+                    <div class="slider-slide3">
+                        <img src="img/ice-3.png" width="1079" height="854" alt="slider-3">
+                        <p class="slider-slogan">Пломбир с помадкой<br> и клубничный щербет</p>
+                        <a class="btn btn-both" href="#">Давайте оба!</a>
+                    </div>
+                </div>
                 <input type="radio" id="btn-1" name="toggle" checked>
                 <input type="radio" id="btn-2" name="toggle">
                 <input type="radio" id="btn-3" name="toggle">
@@ -67,31 +83,14 @@
                     <label for="btn-2"></label>
                     <label for="btn-3"></label>
                 </div>
-                <div class="slider-inner">
-                    <div class="slider-slide">
-                        <img src="img/ice-1.png" width="1045" height="881" alt="slider-1">
-                        <p class="slider-slogan">Крем-брюле и пломбир с малиновым джемом</p>
-                        <a class="btn btn-both" href="#">Давайте оба!</a>
-                    </div>
-                    <div class="slider-slide">
-                        <img src="img/ice-2.png" width="1065" height="859" alt="slider-2">
-                        <p class="slider-slogan">Шоколадный пломбир и лимонный сорбет</p>
-                        <a class="btn btn-both" href="#">Давайте оба!</a>
-                    </div>
-                    <div class="slider-slide">
-                        <img src="img/ice-3.png" width="1079" height="854" alt="slider-3">
-                        <p class="slider-slogan">Пломбир с помадкой и клубничный щербет</p>
-                        <a class="btn btn-both" href="#">Давайте оба!</a>
-                    </div>
-                </div>
             </div><!--Блок со слайдером-->
-            <div class="block banner">
-                <div class="banner-content">
+            <div class="banner clearfix">
+                <div class="banner-left">
                     <h2>Малинка даром!</h2>
                     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                     <a class="btn btn-primary" href="#">Хочу варенье!</a>
                 </div>
-                <div class="banner-content">
+                <div class="banner-right">
                     <h2>Шоколадки даром!</h2>
                     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпке совершенно бесплатно.</p>
                     <a class="btn btn-primary" href="#">Хочу шоколад!</a>
@@ -113,8 +112,7 @@
                         <p class="price">380 <span class="rub"></span>/кг</p>
                     </div>
                     <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-              </div>
-
+                </div>
                 <div class="item">
                     <div class="item-ice">
                         <div class="hit-icon">Хит</div><!--Псевдоэлемент с хитом-->
@@ -132,7 +130,7 @@
                     <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 </div>
             </div><!--Блок с хитами-->
-            <div class="block about">
+            <div class="about">
                 <p class="about-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
                 <ul>
                     <li>
@@ -153,21 +151,21 @@
                     </li>
                 </ul>
             </div><!--Блок с информацией о магазине-->
-            <div class="block blog">
+            <div class="blog clearfix">
                 <div class="news">
                     <h4>Новое в нашем блоге</h4>
                     <a href="#" class="news-blog">10 способов сервировки фруктовых щербетов к столу</a>
                 </div>
                 <div class="distribution">
+                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                     <form class="distribution-form" action="https://echo.htmlacdemy.ru" method="post">
-                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                         <input type="email" placeholder="Электронная почта">
                         <button class="btn btn-primary" type="submit">Отправить</button>
                     </form>
                 </div>
             </div><!--Блог с новостями и рассылкой-->
         </main>
-        <div class="map">
+        <div class="map clearfix">
             <div class="map-address">
                 <p>Адрес главного офиса и<br>офлайн магазина:
                     <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
@@ -180,9 +178,9 @@
                 <div class="feedback">
                     <h3>Мы обязательно вам ответим!</h3>
                     <form class="feedback-form" action="#" method="post">
-                        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
-                        <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
-                        <textarea name="feedback-text" id="feedback-text" cols="30" rows="10">Напишите что-нибудь...</textarea>
+                        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?"><br>
+                        <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"><br>
+                        <textarea name="feedback-text" id="feedback-text" cols="30" rows="10">Напишите что-нибудь...</textarea><br>
                         <button class="btn btn-primary">Отправить</button>
                     </form>
                 </div><!--Всплывающее окно с формой обратной связи-->
@@ -191,14 +189,14 @@
         <footer class="footer">
             <div class="container clearfix">
                 <div class="footer-social">
-                    <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                    <a class="social-btn social-btn-tw" href="#">Tw</a>
+                    <a class="social-btn social-btn-inst" href="#">I</a>
+                    <a class="social-btn social-btn-fb" href="#">F</a>
+                    <a class="social-btn social-btn-vk" href="#">Vk</a>
                 </div>
                 <div class="footer-info">
                     <ul>
-                        <li><a href="#"><img src="img/like-icon.svg" width="15" height="13" alt="Лучшие поставщики">Для поставщиков</a></li>
+                        <li><a href="#">Для поставщиков</a></li>
                         <li><a href="#">О производстве</a></li>
                         <li><a href="#">Наши документы</a></li>
                         <li><a href="#">Экологические стандарты</a></li>
