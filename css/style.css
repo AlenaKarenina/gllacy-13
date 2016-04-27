@@ -241,22 +241,46 @@ ul {
 .footer-social {
   float: left;
   width: 185px;
+  min-height: 31px;
+  margin-right: 214px;
+  margin-top: 36px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .footer-info {
   float: left;
+  width: 350px;
+  margin-top: 36px;
+  font-size: 0;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .footer-info > ul > li {
   display: inline-block;
+  min-width: 165px;
 }
+.footer-info a {
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
 .footer-copyright {
   float: right;
+  width: 190px;
+  margin-top: 19px;
+  font-size: 12px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
+.footer-copyright a {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 .search-form,
 .cart-tooltip,
@@ -296,6 +320,7 @@ ul {
 }
 /*Фильтры*/
 .filters {
+  font-size: 0;
   margin-bottom: 40px;
   /*для визуального выделения элемента*/
   outline: solid orange 1px;
@@ -303,8 +328,10 @@ ul {
 .select {
   display: inline-block;
   vertical-align: top;
-  width: 192px;
+  width: 193px;
   margin-right: 15px;
+  font-size: 14px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -313,13 +340,17 @@ ul {
   vertical-align: top;
   width: 217px;
   margin-right: 15px;
+  font-size: 14px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .fatness {
   display: inline-block;
   vertical-align: top;
-  width: 412px;
+  width: 414px;
+  font-size: 14px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -328,6 +359,8 @@ ul {
   vertical-align: top;
   width: 700px;
   margin-right: 15px;
+  font-size: 14px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
