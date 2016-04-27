@@ -175,22 +175,31 @@ ul {
 
 /*Блок с информацией о магазине*/
 .about {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 20px;
   background-image: url(../img/texture-wafer.png);
   margin-bottom: 40px;
   color: #323232;
+  font-size: 0;
 }
 .about-title {
   font-size: 24px;
   line-height: 30px;
   padding: 0;
-}
-.about li {
-  display: inline-block;
-  width: 565px;
   /*для визуального выделения элемента*/
   outline: solid gray 1px;
+}
+.about>ul>li {
+  display: inline-block;
+  width: 560px;
+  margin-right: 26px;
+  font-size: 16px;
+  line-height: 22px;
+  /*для визуального выделения элемента*/
+  outline: solid gray 1px;
+}
+.about li:nth-child(2n) {
+  margin-right: 0;
 }
 
 /*Блок с новостями и рассылкой*/
@@ -312,6 +321,8 @@ ul {
 /*Переключатель страниц*/
 .paginator {
   text-align: right;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
 }
 .paginator > a,
 .paginator > span {
