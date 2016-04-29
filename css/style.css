@@ -199,8 +199,8 @@ ul {
 */
 .slider-slogan {
   position: absolute;
-  top: 315px;
-  left: 188px;
+  top: 331px;
+  left: 185px;
   color: #ffffff;
   font-size: 60px;;
   line-height: 60.35px;
@@ -244,7 +244,6 @@ ul {
   min-height: 229px;
   padding-left: 20px;
 }
-
 
 /*Блок с хитами*/
 .hit {
@@ -373,7 +372,7 @@ ul {
 
 /*подвал сайта*/
 .footer {
-  margin-top: 40px;
+  margin-top: 0px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -382,7 +381,7 @@ ul {
   width: 185px;
   min-height: 31.41px;
   margin-right: 215px;
-  margin-top: 30px;
+  margin-top: 36px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -460,7 +459,7 @@ ul {
   display: inline-block;
   vertical-align: top;
   width: 192px;
-  margin-right: 15px;
+  margin-right: 16px;
   margin-bottom: 17px;
   font-size: 14px;
   line-height: 14px;
