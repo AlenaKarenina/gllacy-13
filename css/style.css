@@ -32,49 +32,101 @@ h4 {
   color: #323232;
   font-weight: normal;
 }
-
 .container {
-  min-width: 846px;
-  max-width: 1146px;
-  padding: 0 27px;
+  width: 1200px;
   margin: 0 auto;
   /*для визуального выделения элемента*/
-  outline: solid yellow 1px;
+  outline: solid yellow 2px;
+}
+.main-header,
+.phone-header,
+.slider,
+.banner,
+.hit,
+.goods,
+.about,
+.blog,
+.footer,
+.breadcrumbs,
+.filters {
+  width: auto;
+  margin: 0 2.3%;
 }
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-/*Шапка сайта*/
-.main-header {
-  padding-top: 10px;
-  width: auto;
+/*header*/
+.logo {
+  float: left;
+  height: 63px;
+  width: 153px;
+  margin-right: 30px;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
 }
 .main-navigation {
   float: left;
-  width: 375px;
+  padding-top: 10px;
+  width: 570px;
   font-size: 0;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-.logo {
-  float: left;
+.navigation-menu li{
   display: inline-block;
-  min-height: 63px;
-  width: 153px;
-  margin-right: 28px;
+  vertical-align: middle;
+  padding-right: 28px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
+.main-navigation a{
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffffff;
+}
+.navigation-submenu {
+  display: none;
+}
 .user-block {
   float: right;
-  width: 267px;
+  width: 263px;
   font-size: 0;
   text-align: right;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
+}
+.search-list,
+.login-list,
+.cart {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #9db1a5;
+}
+.search-list,
+.login-list {
+  padding-right: 10px;
+}
+.search-list a,
+.login-list a,
+.cart a {
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffffff;
+  text-decoration:none;
+}
+.search-form,
+.cart-tooltip,
+.login-form {
+  display: none;
 }
 .phone-header {
   float: right;
@@ -83,73 +135,72 @@ h4 {
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.main-navigation>ul>li{
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 22px;
-}
-.user-block .search-list,
-.user-block .login-list,
-.user-block .cart {
-  display: inline-block;
-}
-.user-block .search-list,
-.user-block .login-list {
-  padding-right: 10px;
-}
-.user-block .search-list a,
-.user-block .login-list a {
-  font-size: 16px;
-  line-height: 18px;
-  color:#ffffff;
-  text-decoration:none;
-}
-.main-navigation a{
-  font-size: 16px;
-  line-height: 18px;
-  color:#ffffff;
-}
-.main-navigation li {
-  padding-right: 28px;
-}
-.main-navigation li:last-child {
-  padding-right: 0;
-}
-.user-block .cart {
-  font-size: 14px;
-  line-height: 16px;
-}
 
 /*Блок со слайдером*/
 .slider {
+  position: relative;
   min-height: 881px;
   margin-bottom: 40px;
   text-align: center;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-.slider-slide1 img,
-.slider-slide2 img,
-.slider-slide3 img {
-  display: inline-block;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+.slider-slides {
+  width: 300%;
 }
-.slider-slide2,
-.slider-slide3 {
-  display: none;
+.slide {
+  width: 1045px;
+  height: 881px;
+  float: left;
+}
+.slider-inner {
+  overflow: hidden;
 }
 .slider-controls {
-  width: 80px;
+  position: absolute;
+  top: 560px;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  z-index: 100;
+  text-align: left;
+  font-size: 0;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  box-shadow: 0 0 0 0 #ffffff;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #849d8f;
+}
+.controls input[type=radio] {
+  display: none;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #ffffff;
+}
+/*
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-450px);
+}
+#btn-3:checked ~ .slider-inner .slider-slides {
+  transform: translate(-900px);
+}
+*/
 .slider-slogan {
+  position: absolute;
+  top: 315px;
+  left: 188px;
   color: #ffffff;
   font-size: 60px;;
   line-height: 60.35px;
@@ -159,15 +210,20 @@ ul {
 }
 .btn-both {
   display: inline-block;
-  width: 278px;
-  min-height: 62px;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  text-decoration: none;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
+}
+#slide-2,
+#slide-3 {
+  display: none;
 }
 
 /*Блок с баннерами*/
 .banner {
-  width: auto;
   margin-bottom: 40px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
@@ -188,40 +244,55 @@ ul {
   min-height: 229px;
   padding-left: 20px;
 }
-.banner-left a,
-.banner-right a {
-  display: inline-block;
-  width: 165px;
-  min-height: 46px;
-  text-align: center;
-  vertical-align: middle;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
-}
+
 
 /*Блок с хитами*/
 .hit {
   font-size: 0;
-  width: auto;
 }
 .item {
   display: inline-block;
-  margin-right: 26px;
+  margin-right: 2.2%;
   vertical-align: top;
-  font-size: 16px;
   width: 267px;
   margin-bottom: 40px;
+  text-align: center;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .item:nth-child(4n) {
   margin-right: 0;
 }
-
+.item a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.item-ice p {
+  font-size: 30px;
+  line-height: 45px;
+}
+.item-ice {
+  position: relative;
+  /*для визуального выделения элемента*/
+  outline: solid red 1px;
+}
+.price {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
 /*Каталог*/
 .goods {
   font-size: 0;
-  width: auto;
+}
+.btn {
+  display: inline-block;
+  /*для визуального выделения элемента*/
+  outline: solid orange 1px;
+}
+.item-view {
+  display: none;
 }
 
 /*Блок с информацией о магазине*/
@@ -230,7 +301,6 @@ ul {
   margin-bottom: 40px;
   color: #323232;
   font-size: 0;
-  padding: 20px;
 }
 .about-title {
   font-size: 24px;
@@ -239,10 +309,11 @@ ul {
   /*для визуального выделения элемента*/
   outline: solid gray 1px;
 }
-.about>ul>li {
+.about li {
   display: inline-block;
-  width: 540px;
-  margin-right: 26px;
+  vertical-align: top;
+  width: 48.9%;
+  margin-right: 2.2%;
   font-size: 16px;
   line-height: 22px;
   /*для визуального выделения элемента*/
@@ -259,16 +330,14 @@ ul {
 .news {
   float: left;
   background-image: url(../img/blog-image.jpg);
-  width: 520px;
-  min-height: 180px;
-  padding: 20px;
+  width: 48.9%;
+  min-height: 220px;
 }
 .distribution {
   float: right;
   background-color: #f8f7f4;
-  width: 520px;
-  min-height: 180px;
-  padding: 20px;
+  width: 48.9%;
+  min-height: 220px;
   font-size: 16px;
   color: #5a5a5a;
 }
@@ -285,20 +354,18 @@ ul {
   float: right;
   background-color: #fefefe;
   width: 277px;
-  margin-right: 27px;
+  margin-right: 2.3%;
   margin-top: 62px;
   padding-left: 25px;
+  padding-top: 25px;
   padding-bottom: 30px;
   color: #323232;
   font-size: 14px;
 }
-.map-address a {
-  display: inline-block;
-  /*для визуального выделения элемента*/
-  outline: solid gray 1px;
-  width: 250px;
-  min-height: 45px;
-  text-align: center;
+.map-address p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
 }
 .feedback {
   display: none;
@@ -313,23 +380,25 @@ ul {
 .footer-social {
   float: left;
   width: 185px;
-  min-height: 31px;
-  margin-right: 214px;
-  margin-top: 36px;
+  min-height: 31.41px;
+  margin-right: 215px;
+  margin-top: 30px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .footer-info {
   float: left;
-  width: 350px;
-  margin-top: 36px;
+  margin-top: 30px;
   font-size: 0;
+  width: 400px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-.footer-info > ul > li {
+.footer-info li {
   display: inline-block;
-  min-width: 165px;
+  vertical-align: top;
+  margin-right: 32px;
+  width: 168px; /*размер под сомнением*/
 }
 .footer-info a {
   font-size: 13px;
@@ -338,8 +407,7 @@ ul {
 }
 .footer-copyright {
   float: right;
-  width: 190px;
-  margin-top: 19px;
+  margin-top: 17px;
   font-size: 12px;
   line-height: 16px;
   /*для визуального выделения элемента*/
@@ -352,21 +420,16 @@ ul {
   text-decoration: none;
 }
 
-.search-form,
-.cart-tooltip,
-.login-form {
-  display: none;
-}
-
 /*Хлебные крошки*/
 .breadcrumbs {
+  font-size: 0;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-.breadcrumbs > li {
+.breadcrumbs li {
   display: inline-block;
+  vertical-align: top;
   color: #ffffff;
-  vertical-align: text-top;
   font-size: 14px;
   line-height: 16px;
 }
@@ -380,8 +443,8 @@ ul {
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-.paginator > a,
-.paginator > span {
+.paginator a,
+.paginator span {
   display: inline-block;
   vertical-align: top;
 }
@@ -396,20 +459,22 @@ ul {
 .select {
   display: inline-block;
   vertical-align: top;
-  width: 193px;
+  width: 192px;
   margin-right: 15px;
+  margin-bottom: 17px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 14px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .range-controls {
   display: inline-block;
   vertical-align: top;
-  width: 217px;
+  width: 218px;
   margin-right: 15px;
+  margin-bottom: 17px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 14px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -417,18 +482,19 @@ ul {
   display: inline-block;
   vertical-align: top;
   width: 414px;
+  margin-bottom: 17px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 14px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .filler {
   display: inline-block;
   vertical-align: top;
-  width: 700px;
+  width: 702px;
   margin-right: 15px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 14px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -439,7 +505,7 @@ ul {
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-.fatness>ul>li,
-.filler>ul>li {
+.fatness li,
+.filler li {
   display: inline-block;
 }
