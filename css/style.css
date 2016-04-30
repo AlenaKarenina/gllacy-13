@@ -199,10 +199,10 @@ ul {
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-
 .site-wrapper {
   background-image: url(../img/ice-1.png);
   background-repeat: no-repeat;
+  background-position: top;
 }
 
 /*Блок с баннерами*/
