@@ -204,6 +204,10 @@ ul {
   background-repeat: no-repeat;
   background-position: top;
 }
+#slide-2,
+#slide-3 {
+  display: none;
+}
 
 /*Блок с баннерами*/
 .banner {
