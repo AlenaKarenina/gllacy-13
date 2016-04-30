@@ -135,7 +135,7 @@ ul {
 }
 .slide {
   width: 1045px;
-  height: 535px;
+  height: 528px;
   float: left;
 }
 .slider-inner {
@@ -199,18 +199,10 @@ ul {
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-#slide-2,
-#slide-3 {
-  display: none;
-}
-#slide-1 {
+
+.site-wrapper {
   background-image: url(../img/ice-1.png);
-}
-#slide-2 {
-  background-image: url(../img/ice-2.png);
-}
-#slide-2 {
-  background-image: url(../img/ice-3.png);
+  background-repeat: no-repeat;
 }
 
 /*Блок с баннерами*/
