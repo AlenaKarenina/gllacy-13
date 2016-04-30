@@ -4,15 +4,14 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  background-color: #849d8f;
   font-weight: normal;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 h1 {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 h2 {
   font-size: 28px;
@@ -63,25 +62,35 @@ ul {
 }
 .main-navigation {
   float: left;
-  vertical-align: middle;
   width: 570px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-.navigation-menu ul {
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-size: 0;
 }
 .navigation-menu li {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   padding-right: 28px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .main-navigation a {
-  font-size: 16px;
-  line-height: 18px;
-  color:#ffffff;
+  display: block;
+  padding-top: 30px;
+  color: #ffffff;
+}
+.main-navigation a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #f7f6f3;
 }
 .navigation-submenu {
   display: none;
@@ -97,10 +106,9 @@ ul {
 .search-list,
 .login-list,
 .cart {
-  margin-left: 10px;
   display: inline-block;
-  vertical-align: middle;
-  background-color: #9db1a5;
+  vertical-align: top;
+  margin-left: 10px;
 }
 .search-list,
 .login-list {
@@ -109,9 +117,13 @@ ul {
 .search-list a,
 .login-list a,
 .cart a {
-  font-size: 16px;
-  line-height: 18px;
+  display: block;
+  margin-top: 23px;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 16px;
   color:#ffffff;
+  background-color: #9db1a5;
   text-decoration:none;
 }
 .search-form,
@@ -186,6 +198,7 @@ ul {
   color: #ffffff;
   font-size: 60px;;
   line-height: 60.35px;
+  font-weight: 700;
   padding-top: 226px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
@@ -201,6 +214,7 @@ ul {
 }
 .site-wrapper {
   background-image: url(../img/ice-1.png);
+  background-color: #849d8f;
   background-repeat: no-repeat;
   background-position: top;
 }
