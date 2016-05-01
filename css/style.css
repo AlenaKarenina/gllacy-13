@@ -114,6 +114,7 @@ ul {
 .cart {
   display: inline-block;
   vertical-align: top;
+  text-align: left;
 }
 .search-list,
 .login-list {
@@ -173,11 +174,11 @@ ul {
 }
 .cart a {
   position: relative;
+  width: 72px;
   border-radius: 25px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 45px;
-  padding-right: 34px;
 }
 .cart a:before {
   content: "";
@@ -224,7 +225,6 @@ ul {
   overflow: hidden;
 }
 .slider-controls {
-
   text-align: left;
   font-size: 0;
   /*для визуального выделения элемента*/
@@ -272,21 +272,6 @@ ul {
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
-.btn {
-  display: block;
-  color: #ffffff;
-  text-decoration: none;
-}
-.btn-both {
-  font-size: 32px;
-  line-height: 44px;
-  font-weight: 700;
-  height: 56px;
-  width: 278px;
-  padding-top: 8px;
-  border-radius: 35px;
-  background-color: #f06441;
-}
 .site-wrapper {
   background-image: url(../img/ice-1.png);
   background-color: #849d8f;
@@ -297,10 +282,31 @@ ul {
 #slide-3 {
   display: none;
 }
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  /*для визуального выделения элемента*/
+  outline: solid orange 1px;
+}
+.btn-both {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  height: 56px;
+  width: 278px;
+  padding-top: 8px;
+  border-radius: 35px;
+  background-color: #f06441;
+  border: none;
+  box-shadow: 0 3px 3px -1px #ac5949;
+}
 
 /*Блок с баннерами*/
 .banner {
   margin-bottom: 40px;
+  font-size: 0;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -308,17 +314,47 @@ ul {
   float: left;
   background-image: url(../img/razz.png);
   background-repeat: no-repeat;
-  width: 540px;
+  width: 520px;
   min-height: 229px;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 .banner-right {
   float: right;
   background-image: url(../img/chocolate.png);
   background-repeat: no-repeat;
-  width: 540px;
+  width: 520px;
   min-height: 229px;
-  padding-left: 20px;
+  padding: 0 20px;
+}
+.banner-left h2,
+.banner-right h2 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.banner-left p,
+.banner-right p{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  /*для визуального выделения элемента*/
+  outline: solid lightyellow 1px;
+}
+.btn-primary {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-left: 354px;
+  width: 165px;
+  text-align: center;
+  background-color: #f06441;
+  border-radius: 26px;
+  border: none;
+  box-shadow: 0 3px 3px -1px #750b01;
 }
 
 /*Блок с хитами*/
@@ -360,11 +396,6 @@ ul {
 /*Каталог*/
 .goods {
   font-size: 0;
-}
-.btn {
-  display: inline-block;
-  /*для визуального выделения элемента*/
-  outline: solid orange 1px;
 }
 .item-view {
   display: none;
