@@ -7,75 +7,71 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="main-header clearfix">
-          <a class="logo" href="index.html"><img src="img/logo.png" width="153" height="63" alt="Логотип GllacyShop"></a>
-          <nav class="main-navigation">
-            <ul class="navigation-menu">
-              <li>
-                <a href="#" class="active">Каталог</a>
-                <ul class="navigation-submenu">
-                  <li><a href="#"><b>Новинки</b></a></li>
-                  <li><a href="catalog.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>
-            </ul>
-          </nav>
-          <div class="user-block">
-            <div class="search-list">
-              <a href="#">Поиск</a>
-              <form class="search-form" action="https://echo.htmlacdemy.ru" method="post">
-                <input class="search" type="text" name="search" placeholder="Что ищем?">
-              </form>
-            </div><!--Выпадающая форма поиска-->
-            <div class="login-list">
-              <a href="#" class="login-header">Вход</a>
-              <form class="login-form" action="https://echo.htmlacdemy.ru" method="post">
-                <input class="mail" type="email" name="mail-input" placeholder="Электронная почта">
-                <input class="password" type="password" name="password-input" placeholder="Пароль">
-                <button class="btn" type="submit">Войти</button>
-                <div class="links">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </div><!--блок для ссылок-->
-              </form><!--Выпадающая форма для входа-->
-            </div>
-            <div class="cart cart-active">
-              <a class="cart-handler">2 товара</a>
-            </div>
-            <div class="cart-tooltip">
-              <div class="cart-item">
-                <button class="cancel">Удалить</button>
-                <a href="#"><img class="cart-image" src="img/item-small-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></a>
-                <span><a href="#">Пломбир с апельсиновым джемом</a></span>
-                <span>1,5 кг х <span class="cost">200 руб</span></span>
-                <span>300 руб.</span>
-              </div>
-              <div class="cart-item">
-                <button class="cancel">Удалить</button>
-                <a href="#"><img class="cart-image" src="img/item-small-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой"></a>
-                <span><a href="#">Клубничный пломбир с присыпкой</a></span>
-                <span>1,5 кг х <span class="cost">300 руб</span></span>
-                <span>450 руб.</span>
-              </div>
-              <p class="cart-summa">Итого: 750 руб.</p>
-              <button class="btn btn-primary" type="button">Оформить заказ</button>
-            </div><!--выпадающая корзина товара-->
+    <header class="page-header">
+      <div class="container clearfix">
+        <a class="logo" href="index.html"><img src="img/logo.png" width="153" height="63" alt="Логотип GllacyShop"></a>
+        <nav class="main-navigation">
+          <ul class="navigation-menu">
+            <li>
+              <a href="#" class="active">Каталог</a>
+              <ul class="navigation-submenu">
+                <li><a href="#"><b>Новинки</b></a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О Компании</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <div class="search-list">
+            <a href="#">Поиск</a>
+            <form class="search-form" action="https://echo.htmlacdemy.ru" method="post">
+              <input class="search" type="text" name="search" placeholder="Что ищем?">
+            </form>
+          </div><!--Выпадающая форма поиска-->
+          <div class="login-list">
+            <a href="#" class="login-header">Вход</a>
+            <form class="login-form" action="https://echo.htmlacdemy.ru" method="post">
+              <input class="mail" type="email" name="mail-input" placeholder="Электронная почта">
+              <input class="password" type="password" name="password-input" placeholder="Пароль">
+              <button class="btn" type="submit">Войти</button>
+              <div class="links">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div><!--блок для ссылок-->
+            </form><!--Выпадающая форма для входа-->
           </div>
+          <div class="cart cart-active">
+            <a class="cart-handler">2 товара</a>
+          </div>
+          <div class="cart-tooltip">
+            <div class="cart-item">
+              <button class="cancel">Удалить</button>
+              <a href="#"><img class="cart-image" src="img/item-small-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></a>
+              <span><a href="#">Пломбир с апельсиновым джемом</a></span>
+              <span>1,5 кг х <span class="cost">200 руб</span></span>
+              <span>300 руб.</span>
+            </div>
+            <div class="cart-item">
+              <button class="cancel">Удалить</button>
+              <a href="#"><img class="cart-image" src="img/item-small-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой"></a>
+              <span><a href="#">Клубничный пломбир с присыпкой</a></span>
+              <span>1,5 кг х <span class="cost">300 руб</span></span>
+              <span>450 руб.</span>
+            </div>
+            <p class="cart-summa">Итого: 750 руб.</p>
+            <button class="btn btn-primary" type="button">Оформить заказ</button>
+          </div><!--выпадающая корзина товара-->
         </div>
       </div>
       <div class="container clearfix">
-        <div class="phone-header">
-          <p>C 10 до 20, ежедневно<br>
-            <span>8 812 450-25-25</span>
-          </p>
-        </div>
+        <p class="phone-header">C 10 до 20, ежедневно<br>
+          <span>8 812 450-25-25</span>
+        </p>
       </div>
     </header>
     <main class="container">
