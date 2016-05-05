@@ -296,8 +296,6 @@ ul {
 .banner {
   margin-bottom: 40px;
   font-size: 0;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .banner-left {
   float: left;
@@ -320,23 +318,24 @@ ul {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 15px;
 }
 .banner-left p,
 .banner-right p{
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  margin: 0;
+  margin-bottom: 43px;
 }
 .btn-primary {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 11px 20px;
-  margin-left: 354px;
+  padding: 11px 22px;
+  margin-left: 350px;
   text-align: center;
 }
 
