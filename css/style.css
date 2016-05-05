@@ -5,8 +5,13 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  background-color: #849d8f;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 h1 {
   font-size: 35px;
@@ -36,10 +41,7 @@ h4 {
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
-  /*для визуального выделения элемента*/
-  outline: solid yellow 1px;
 }
-
 .clearfix:after {
   content: "";
   display: table;
@@ -49,6 +51,30 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ed5b3d;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+  background-image: linear-gradient(#f26843, #ca3824);
+  box-shadow: 0 2px 2px 0 #ac5949;
+}
+.btn:hover {
+  background-image: linear-gradient(#f58669, #ec6f5e);
+  box-shadow: 0 1px 2px 0 #ac1000;
+}
+.btn:active {
+  background-image: linear-gradient(#d74632, #e1613e);
+  box-shadow: inset 0 2px 2px 0 #942718;
+}
+.line {
+  border-bottom: 1px solid #9db1a5;
 }
 
 /*header*/
@@ -61,15 +87,11 @@ ul {
   height: 63px;
   width: 153px;
   margin-top: 10px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .main-navigation {
   float: left;
   width: 570px;
   margin-left: 165px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .main-navigation ul {
   margin: 0;
@@ -83,14 +105,13 @@ ul {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .main-navigation a {
   display: block;
   margin-top: 22px;
   padding: 8px 14px;
   color: #ffffff;
+  text-decoration: none;
 }
 .main-navigation a:hover {
   border-radius: 25px;
@@ -105,8 +126,6 @@ ul {
   float: right;
   font-size: 0;
   text-align: right;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .search-list,
 .login-list,
@@ -145,8 +164,7 @@ ul {
   left: 16px;
   width: 20px;
   height: 19px;
-  background-image: url(../img/login.svg);
-  background-repeat: no-repeat;
+  background: url(../img/sprite.png) no-repeat -368px -10px;
 }
 /*.login-list a:hover:before {
   background-image: url(../img/login-active.svg);
@@ -168,8 +186,7 @@ ul {
   left: 9px;
   width: 17px;
   height: 17px;
-  background-image: url(../img/search.svg);
-  background-repeat: no-repeat;
+  background: url(../img/sprite.png) no-repeat -408px -10px;
 }
 .cart a {
   position: relative;
@@ -186,8 +203,7 @@ ul {
   left: 16px;
   width: 21px;
   height: 20px;
-  background-image: url("../img/cart.svg");
-  background-repeat: no-repeat;
+  background: url("../img/sprite.png") no-repeat -158px -10px;
 }
 .search-form,
 .cart-tooltip,
@@ -201,8 +217,6 @@ ul {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .phone-header span {
   font-size: 20px;
@@ -219,7 +233,7 @@ ul {
   width: 1045px;
   height: 284px;
   margin: 0 auto;
-  padding-top: 208px;
+  padding-top: 268px;
 }
 .slider-inner {
   overflow: hidden;
@@ -243,33 +257,19 @@ ul {
 .controls input[type=radio] {
   display: none;
 }
-/*
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background-color: #ffffff;
-}
-#btn-1:checked ~ .slider-inner .slider-slides {
-  transform: translate(0);
-}
-#btn-2:checked ~ .slider-inner .slider-slides {
-  transform: translate(-450px);
-}
-#btn-3:checked ~ .slider-inner .slider-slides {
-  transform: translate(-900px);
-}
-*/
+
 .slider-slogan {
   margin: 0 auto;
 }
 .slider-slogan p {
   display: block;
-  max-width: 670px;
+  min-width: 700px;
   margin: 0 auto;
   color: #ffffff;
   font-size: 60px;
   line-height: 60.35px;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 0.3px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -283,26 +283,13 @@ ul {
 #slide-3 {
   display: none;
 }
-.btn {
-  display: inline-block;
-  vertical-align: top;
-  color: #ffffff;
-  text-decoration: none;
-  /*для визуального выделения элемента*/
-  outline: solid orange 1px;
-}
 .btn-both {
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
-  height: 56px;
-  width: 278px;
-  padding-top: 8px;
-  border-radius: 35px;
-  background-color: #f06441;
-  border: none;
-  box-shadow: 0 3px 3px -1px #ac5949;
+  padding: 11px 40px;
+  text-shadow: 0 2px 5px #a0200b;
 }
 
 /*Блок с баннерами*/
@@ -348,15 +335,9 @@ ul {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding: 11px 20px;
   margin-left: 354px;
-  width: 165px;
   text-align: center;
-  background-color: #f06441;
-  border-radius: 26px;
-  border: none;
-  box-shadow: 0 3px 3px -1px #750b01;
 }
 
 /*Блок с хитами*/
@@ -370,8 +351,6 @@ ul {
   width: 267px;
   margin-bottom: 40px;
   text-align: center;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .item:nth-child(4n) {
   margin-right: 0;
@@ -380,21 +359,52 @@ ul {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-}
-.item-ice p {
-  font-size: 30px;
-  line-height: 45px;
+  text-decoration: none;
 }
 .item-ice {
   position: relative;
-  /*для визуального выделения элемента*/
-  outline: solid red 1px;
+  font-size: 0;
 }
 .price {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
+  position: relative;
 }
+.price-value {
+  position: absolute;
+  top: -68px;
+  left: -2px;;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  text-shadow: 0 1px 5px #6d7f76;
+}
+.price-kg {
+  position: absolute;
+  top: -64px;
+  left: 112px;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  text-shadow: 0 1px 5px #6d7f76;
+}
+.rub:after {
+  content: "";
+  position: absolute;
+  top: -62px;
+  left: 78px;
+  width: 32px;
+  height: 37px;
+  background: url(../img/sprite.png) no-repeat -512px -10px;
+}
+.hit-icon:before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background: url(../img/sprite.png) no-repeat -10px -10px;
+}
+
 /*Каталог*/
 .goods {
   font-size: 0;
@@ -449,21 +459,26 @@ ul {
   font-size: 16px;
   color: #5a5a5a;
 }
-
+.btn-distribution {
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
 /*Блог с картой*/
-.map {
-  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;
-  width: 1200px;
-  min-height: 430px;
-  margin: 0 auto;
+.map-contacts {
+  width: auto;
+  min-height: 310px;
+  padding: 60px 0;
+  background: url(../img/map.jpg) no-repeat center;
+   /*для визуального выделения элемента*/
+  outline: solid yellow 1px;
 }
 .map-address {
   float: right;
   background-color: #fefefe;
   width: 277px;
   margin-right: 27px;
-  margin-top: 62px;
   padding-left: 25px;
   padding-top: 25px;
   padding-bottom: 30px;
@@ -478,7 +493,12 @@ ul {
 .feedback {
   display: none;
 }
-
+.btn-feedback {
+  padding: 10px 28px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
 /*footer*/
 .footer {
   margin-top: 0px;
@@ -487,10 +507,10 @@ ul {
 }
 .footer-social {
   float: left;
-  width: 185px;
-  min-height: 31.41px;
+  width: 210px;
   margin-right: 215px;
   margin-top: 36px;
+  font-size: 0;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -498,20 +518,30 @@ ul {
   float: left;
   margin-top: 30px;
   font-size: 0;
-  width: 400px;
+  width: 450px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .footer-info li {
   display: inline-block;
   vertical-align: top;
-  margin-right: 32px;
-  width: 168px; /*размер под сомнением*/
+  padding-left: 20px;
 }
+.footer-info li:nth-child(2) {
+  padding-left: 10px;
+}
+
 .footer-info a {
   font-size: 13px;
   line-height: 16px;
   color: #ffffff;
+}
+.like:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  background: url(../img/sprite.png) no-repeat -266px -10px;
 }
 .footer-copyright {
   float: right;
@@ -526,6 +556,39 @@ ul {
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
+}
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 31px;
+  height: 31px;
+  margin-right: 12px;
+  text-align: center;
+  border: 3px solid #c2cec7;
+  border-radius: 50%;
+  color: #849d8f;
+}
+/*.social-btn:hover {
+  background-color: #ffffff;
+  border: 3px solid #ccd7d1;
+}
+.social-btn:active {
+  background-color: #e9e9e9;
+  border: 3px solid #d9e1dd;
+  box-shadow: inset 0 2px 1px 0 #888888;
+}*/
+
+.social-btn-tw {
+  background: url(../img/sprite.png) no-repeat -665px -10px;
+}
+.social-btn-inst {
+  background: url(../img/sprite.png) no-repeat -614px -10px;
+}
+.social-btn-fb {
+  background: url(../img/sprite.png) no-repeat -563px -10px;
+}
+.social-btn-vk {
+  background: url(../img/sprite.png) no-repeat -716px -10px;
 }
 
 /*Хлебные крошки*/
@@ -582,7 +645,7 @@ ul {
   margin-right: 16px;
   margin-bottom: 17px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -593,7 +656,7 @@ ul {
   margin-right: 15px;
   margin-bottom: 17px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -603,7 +666,7 @@ ul {
   width: 414px;
   margin-bottom: 17px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
@@ -613,13 +676,13 @@ ul {
   width: 702px;
   margin-right: 15px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 16px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;
 }
 .btn-filter {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 144px;
   /*для визуального выделения элемента*/
   outline: solid lightyellow 1px;

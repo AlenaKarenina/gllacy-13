@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>GllacyShop | Каталог</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,7 +16,7 @@
             <li>
               <a href="#" class="active">Каталог</a>
               <ul class="navigation-submenu">
-                <li><a href="#"><b>Новинки</b></a></li>
+                <li><a href="#"><h2>Новинки</h2></a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
@@ -161,16 +162,20 @@
               </li>
             </ul>
           </div><!--выбор наполнителей-->
-          <button class="btn btn-filter" type="submit">Применить</button>
+          <button class="btn-filter" type="submit">Применить</button>
         </form>
       </div><!--Блок с фильтрами-->
       <div class="goods">
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
-            <p class="price">310 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">310</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="line" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -178,9 +183,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
-            <p class="price">380 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">380</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="line" href="#">Сливочно-кофейное с кусочками шоколада</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -188,9 +197,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
-            <p class="price">355 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">355</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="line" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -198,9 +211,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
-            <p class="price">415 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">415</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="line" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -208,9 +225,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-5.png" width="267" height="267" alt="Сливочное с брусничным джемом"></a>
-            <p class="price">325 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">325</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочное с брусничным джемом</a>
+          <a class="line" href="#">Сливочное с брусничным джемом</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -218,9 +239,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></a>
-            <p class="price">410 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">410</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+          <a class="line" href="#">Сливочно-черничное с цельными ягодами черники</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -228,9 +253,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></a>
-            <p class="price">375 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">375</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          <a class="line" href="#">Сливочно-лимонное с карамельной присыпкой</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -238,9 +267,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой"></a>
-            <p class="price">320 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">320</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочное с шоколадной стружкой</a>
+          <a class="line" href="#">Сливочное с шоколадной стружкой</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -248,9 +281,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></a>
-            <p class="price">440 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">440</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+          <a class="line" href="#">Сливочно-ванильное с кусочками шоколада</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -258,9 +295,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-10.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></a>
-            <p class="price">435 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">435</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочноe с ментоловым сиропом</a>
+          <a class="line" href="#">Сливочноe с ментоловым сиропом</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -268,9 +309,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></a>
-            <p class="price">355 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">355</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочное с кусочками черного шоколада</a>
+          <a class="line" href="#">Сливочное с кусочками черного шоколада</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -278,9 +323,13 @@
         <div class="item">
           <div class="item-ice">
             <a href="#"><img class="image-item" src="img/item-12.png" width="267" height="267" alt="Сливочное с мятным сиропом"></a>
-            <p class="price">420 <span class="rub"></span>/кг</p>
+            <div class="price">
+              <span class="price-value">420</span>
+              <span class="rub"></span>
+              <span class="price-kg">&#47;кг</span>
+            </div>
           </div>
-          <a href="#">Сливочное с мятным сиропом</a>
+          <a class="line" href="#">Сливочное с мятным сиропом</a>
           <div class="item-view">
             <a class="btn btn-primary" href="#">Быстрый просмотр</a>
           </div>
@@ -300,8 +349,8 @@
       <div class="container clearfix">
         <div class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Tw</a>
-          <a class="social-btn social-btn-inst" href="#">Ins</a>
-          <a class="social-btn social-btn-fb" href="#">F</a>
+          <a class="social-btn social-btn-inst" href="#">Inst</a>
+          <a class="social-btn social-btn-fb" href="#">Fb</a>
           <a class="social-btn social-btn-vk" href="#">Vk</a>
         </div>
         <div class="footer-info">

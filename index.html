@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>GllacyShop</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -22,7 +23,7 @@
                 <li>
                   <a href="#">Каталог</a>
                   <ul class="navigation-submenu">
-                    <li><a href="#"><b>Новинки</b></a></li>
+                    <li><a href="#"><h2>Новинки</h2></a></li>
                     <li><a href="#">Щербеты</a></li>
                     <li><a href="#">Фруктовый лед</a></li>
                     <li><a href="#">Мелорин</a></li>
@@ -68,19 +69,19 @@
               <div class="slider-slides">
                 <div class="slide" id="slide-1">
                   <div class="slider-slogan">
-                    <p>Крем-брюле и пломбир с малиновым джемом</p>
+                    <p>Крем-брюле и пломбир с&nbsp;малиновым джемом</p>
                     <a class="btn btn-both" href="#">Давайте оба!</a>
                   </div>
                 </div>
                 <div class="slide" id="slide-2">
                   <div class="slider-slogan">
-                    <p>Шоколадный пломбир и лимонный сорбет</p>
+                    <p>Шоколадный пломбир и&nbsp;лимонный&nbsp;сорбет</p>
                     <a class="btn btn-both" href="#">Давайте оба!</a>
                   </div>
                 </div>
                 <div class="slide" id="slide-3">
                   <div class="slider-slogan">
-                    <p>Пломбир с помадкой и клубничный щербет</p>
+                    <p>Пломбир с помадкой и&nbsp;клубничный&nbsp;щербет</p>
                     <a class="btn btn-both" href="#">Давайте оба!</a>
                   </div>
                 </div>
@@ -109,37 +110,53 @@
               <div class="item-ice">
                 <div class="hit-icon">Хит</div><!--Псевдоэлемент с хитом-->
                 <a href="#"><img class="image-item" src="img/item-1.png" width="267" height="267" alt="Мороженое-хит-1"></a>
-                <p class="price">310 <span class="rub"></span>/кг</p>
+                <div class="price">
+                  <span class="price-value">310</span>
+                  <span class="rub"></span>
+                  <span class="price-kg">&#47;кг</span>
+                </div>
               </div>
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a class="line" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </div>
             <div class="item">
               <div class="item-ice">
                 <div class="hit-icon">Хит</div><!--Псевдоэлемент с хитом-->
                 <a href="#"><img class="image-item" src="img/item-2.png" width="267" height="267" alt="Мороженое-хит-2"></a>
-                <p class="price">380 <span class="rub"></span>/кг</p>
+                <div class="price">
+                  <span class="price-value">380</span>
+                  <span class="rub"></span>
+                  <span class="price-kg">&#47;кг</span>
+                </div>
               </div>
-              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              <a class="line" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </div>
             <div class="item">
               <div class="item-ice">
                 <div class="hit-icon">Хит</div><!--Псевдоэлемент с хитом-->
                 <a href="#"><img class="image-item" src="img/item-3.png" width="267" height="267" alt="Мороженое-хит-3"></a>
-                <p class="price">355 <span class="rub"></span>/кг</p>
+                <div class="price">
+                  <span class="price-value">355</span>
+                  <span class="rub"></span>
+                  <span class="price-kg">&#47;кг</span>
+                </div>
               </div>
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <a class="line" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </div>
             <div class="item">
               <div class="item-ice">
                 <div class="hit-icon">Хит</div><!--Псевдоэлемент с хитом-->
                 <a href="#"><img class="image-item" src="img/item-4.png" width="267" height="267" alt="Мороженое-хит-4"></a>
-                <p class="price">415 <span class="rub"></span>/кг</p>
+                <div class="price">
+                  <span class="price-value">415</span>
+                  <span class="rub"></span>
+                  <span class="price-kg">&#47;кг</span>
+                </div>
               </div>
-              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              <a class="line" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </div>
           </div><!--Блок с хитами-->
           <div class="about">
-            <p class="about-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+            <p class="about-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
             <ul>
               <li>
                 <span class="icon"></span>
@@ -173,38 +190,40 @@
             </div>
           </div><!--Блог с новостями и рассылкой-->
         </main>
-        <div class="map clearfix">
-          <div class="map-address">
-            <p>Адрес главного офиса и<br>офлайн магазина:<br>
-              <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
-            </p>
-            <p>Для заказов по телефону:<br>
-              <b>8 812 450-25-25</b><br>
-            (с 10 до 20 ежедневно)
-            </p>
-            <a class="btn btn-feedback" href="#">Форма обратной связи</a>
-            <div class="feedback">
-              <h3>Мы обязательно вам ответим!</h3>
-              <form class="feedback-form" action="#" method="post">
-                <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?"><br>
-                <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"><br>
-                <textarea name="feedback-text" id="feedback-text" cols="30" rows="10">Напишите что-нибудь...</textarea><br>
-                <button class="btn btn-feedback">Отправить</button>
-              </form>
-            </div><!--Всплывающее окно с формой обратной связи-->
+        <div class="map-contacts">
+          <div class="container clearfix">
+            <div class="map-address">
+              <p>Адрес главного офиса и<br>офлайн магазина:<br>
+                <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
+              </p>
+              <p>Для заказов по телефону:<br>
+                <b>8 812 450-25-25</b><br>
+              (с 10 до 20 ежедневно)
+              </p>
+              <a class="btn btn-feedback" href="#">Форма обратной связи</a>
+              <div class="feedback">
+                <h3>Мы обязательно вам ответим!</h3>
+                <form class="feedback-form" action="#" method="post">
+                  <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?"><br>
+                  <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"><br>
+                  <textarea name="feedback-text" id="feedback-text" cols="30" rows="10">Напишите что-нибудь...</textarea><br>
+                  <button class="btn btn-feedback">Отправить</button>
+                </form>
+              </div><!--Всплывающее окно с формой обратной связи-->
+            </div>
           </div>
-        </div><!--Блог с картой-->
+        </div><!--Блок с картой-->
         <footer class="footer">
           <div class="container clearfix">
             <div class="footer-social">
-              <a class="social-btn social-btn-tw" href="#">Tw</a>
-              <a class="social-btn social-btn-inst" href="#">I</a>
-              <a class="social-btn social-btn-fb" href="#">F</a>
-              <a class="social-btn social-btn-vk" href="#">Vk</a>
+              <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
             </div>
             <div class="footer-info">
               <ul>
-                <li><a href="#">Для поставщиков</a></li>
+                <li><a href="#"><span class="like"></span>Для поставщиков</a></li>
                 <li><a href="#">Наши документы</a></li>
                 <li><a href="#">О производстве</a></li>
                 <li><a href="#">Экологические стандарты</a></li>
