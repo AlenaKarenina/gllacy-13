@@ -571,30 +571,50 @@ h2.about-title {
   line-height: 24px;
   font-weight: 700;
 }
-/*Блог с картой*/
+/*Блок с картой*/
 .map-contacts {
   width: auto;
   min-height: 310px;
   padding: 60px 0;
   background: url(../img/map.jpg) no-repeat center;
-   /*для визуального выделения элемента*/
-  outline: solid yellow 1px;
 }
 .map-address {
   float: right;
   background-color: #fefefe;
   width: 277px;
-  margin-right: 27px;
+  margin-right: 0;
   padding-left: 25px;
-  padding-top: 25px;
+  padding-top: 29px;
   padding-bottom: 30px;
   color: #323232;
-  font-size: 14px;
+  border-radius: 15px;
+  font-size: 0;
 }
 .map-address p {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   color: #323232;
+}
+.address {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.tel {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 .feedback {
   display: none;
@@ -604,6 +624,7 @@ h2.about-title {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  margin-top: 26px;
 }
 /*footer*/
 .footer {
