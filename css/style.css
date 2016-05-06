@@ -226,23 +226,20 @@ ul {
 /*Блок со слайдером*/
 .slider {
   text-align: center;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  position: relative;
 }
 .slide {
   width: 1045px;
-  height: 284px;
+  height: 256px;
   margin: 0 auto;
   padding-top: 268px;
 }
-.slider-inner {
-  overflow: hidden;
-}
 .slider-controls {
-  text-align: left;
+  position: absolute;
+  bottom: 51px;
+  left: 0;
+  z-index: 20;
   font-size: 0;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .slider-controls label {
   display: inline-block;
@@ -270,8 +267,6 @@ ul {
   line-height: 60.35px;
   font-weight: 900;
   letter-spacing: 0.3px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .site-wrapper {
   background-image: url(../img/ice-1.png);
@@ -425,7 +420,6 @@ ul {
   margin-bottom: 40px;
   border-radius: 15px;
   color: #323232;
-  font-size: 0;
 }
 h2.about-title {
   margin: 5px 0;
@@ -434,6 +428,9 @@ h2.about-title {
   font-weight: 500;
   color: #323232;
   padding: 0;
+}
+.about ul {
+  font-size: 0;
 }
 .about li {
   display: inline-block;
@@ -449,7 +446,7 @@ h2.about-title {
   margin-right: 0;
 }
 .about p {
-  padding-top: 2px;
+  padding: 0;
   padding-left: 57px;
 }
 .icon-icecream:before {
@@ -629,16 +626,12 @@ h2.about-title {
 /*footer*/
 .footer {
   margin-top: 0px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .footer-social {
   float: left;
   width: 200px;
   margin-top: 36px;
   font-size: 0;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .footer-info {
   float: left;
@@ -646,8 +639,6 @@ h2.about-title {
   font-size: 0;
   width: 400px;
   margin-left: 200px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .footer-info ul {
   margin: 0;
@@ -695,8 +686,6 @@ h2.about-title {
   margin-top: 17px;
   font-size: 12px;
   line-height: 16px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .footer-copyright a {
   font-size: 12px;
