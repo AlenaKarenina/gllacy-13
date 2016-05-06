@@ -63,7 +63,7 @@ ul {
   cursor: pointer;
   border-radius: 35px;
   background-image: linear-gradient(#f26843, #ca3824);
-  box-shadow: 0 2px 2px 0 #ac5949;
+  box-shadow: 0 2px 2px 0 rgba(160,32,11, 0.7);
 }
 .btn:hover {
   background-image: linear-gradient(#f58669, #ec6f5e);
@@ -431,7 +431,7 @@ h2.about-title {
   margin: 5px 0;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 500;
   color: #323232;
   padding: 0;
 }
@@ -451,7 +451,6 @@ h2.about-title {
 .about p {
   padding-top: 2px;
   padding-left: 57px;
-  padding-bottom: 0;
 }
 .icon-icecream:before {
   content: "";
@@ -497,19 +496,77 @@ h2.about-title {
 .news {
   float: left;
   background-image: url(../img/blog-image.jpg);
-  width: 560px;
-  min-height: 220px;
+  background-repeat: no-repeat;
+  width: 289px;
+  min-height: 197px;
+  padding-top: 23px;
+  padding-left: 21px;
+  padding-right: 250px;
+  margin: 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 0;
+}
+.news h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #323232;
+  margin: 0;
+  padding: 0;
+}
+.news a {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  text-decoration: underline;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
 }
 .distribution {
   float: right;
+  padding-left: 21px;
+  padding-right: 15px;
+  padding-top: 30px;
   background-color: #f8f7f4;
-  width: 560px;
-  min-height: 220px;
+  width: 512px;
+  min-height: 178px;
+  border-radius: 15px;
+  border: 6px solid red;
+  font-size: 0;
+}
+.distribution p {
   font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
   color: #5a5a5a;
+  padding: 0;
+  margin: 0;
+}
+.distribution-form {
+  margin-top: 40px;
+}
+.distribution input {
+  display: inline-block;
+  vertical-align: top;
+}
+.distribution input[type="email"] {
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  border-radius: 5px;
+  border: 1px solid #a0a0a0;
+  width: 352px;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #999999;
 }
 .btn-distribution {
-  padding: 10px 20px;
+  padding: 9px 18px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -632,8 +689,8 @@ h2.about-title {
   color: #ffbc9e;
   border-bottom: 1px solid #ffbc9e;
 }
-.copyright-logo {
-  border:none;
+.copyright-logo img {
+  border-bottom: none;
 }
 .social-btn {
   display: inline-block;
