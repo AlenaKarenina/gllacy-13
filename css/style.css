@@ -139,7 +139,7 @@ ul {
   list-style: none;
   background: #f8f7f4;
   border-radius: 5px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
 }
 .navigation-submenu li:first-child a {
   font-size: 14px;
@@ -193,7 +193,6 @@ ul {
 	background-color: #d07058;
 }
 
-
 .user-block {
   float: right;
   font-size: 0;
@@ -221,6 +220,63 @@ ul {
   background-color: #9db1a5;
   text-decoration:none;
 }
+.search-list a {
+  position: relative;
+  border-radius: 18px;
+  width: 33px;
+  height: 33px;
+  font-size: 0;
+}
+.search-list a:before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 17px;
+  height: 17px;
+  background: url(../img/sprite.png) no-repeat -408px -10px;
+}
+.search-list a:hover:before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 17px;
+  height: 17px;
+  background: url(../img/search-active.svg) no-repeat;
+}
+.search-list:hover a {
+  background-color: #f8f7f4;
+}
+.search-list {
+  position: relative;
+}
+.search-form {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right:0;
+  z-index: 20;
+  min-width: 310px;
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+.search-list:hover .search-form{
+  display: block;
+}
+.search-form input[type="text"] {
+  width: 308px;
+  border:1px solid #d3d3d2;
+  border-radius: 5px;
+  padding: 8px 14px;
+}
 .login-list a{
   position: relative;
   padding-right: 16px;
@@ -238,28 +294,7 @@ ul {
   height: 19px;
   background: url(../img/sprite.png) no-repeat -368px -10px;
 }
-/*.login-list a:hover:before {
-  background-image: url(../img/login-active.svg);
-  background-repeat: no-repeat;
-  color: #323232;
-  background-color: #f8f7f4;
-}*/
-.search-list a {
-  position: relative;
-  border-radius: 18px;
-  width: 33px;
-  height: 33px;
-  font-size: 0;
-}
-.search-list a:before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 9px;
-  width: 17px;
-  height: 17px;
-  background: url(../img/sprite.png) no-repeat -408px -10px;
-}
+
 .cart a {
   position: relative;
   width: 72px;
@@ -277,7 +312,7 @@ ul {
   height: 20px;
   background: url("../img/sprite.png") no-repeat -158px -10px;
 }
-.search-form,
+
 .cart-tooltip,
 .login-form {
   display: none;
