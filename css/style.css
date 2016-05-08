@@ -926,18 +926,23 @@ h2.about-title {
 /*Хлебные крошки*/
 .breadcrumbs {
   font-size: 0;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  margin-top: 18px;
 }
 .breadcrumbs li {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
+  margin-right: 5px;
+  padding: 0;
+  padding-right: 15px;
 }
 .breadcrumbs a {
   color: #ffffff;
+  border-bottom: 1px solid #aebeb5;
+  text-decoration: none;
 }
 
 /*Переключатель страниц*/
@@ -976,9 +981,8 @@ h2.about-title {
 .paginator span {
   color: #323232;
 }
-.active-page {
+.active-page-paginator {
   background-color: #ffffff;
-  text-align: center;
 }
 
 /*Фильтры*/
