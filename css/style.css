@@ -944,7 +944,11 @@ h2.about-title {
   border-bottom: 1px solid #aebeb5;
   text-decoration: none;
 }
-
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid #ffbc9e;
+}
 /*Переключатель страниц*/
 .paginator {
   font-size: 0;
