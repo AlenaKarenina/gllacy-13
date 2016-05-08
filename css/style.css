@@ -383,7 +383,19 @@ ul {
   height: 20px;
   background: url("../img/sprite.png") no-repeat -158px -10px;
 }
-
+.cart a:hover:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background: url("../img/cart-active.svg") no-repeat;
+}
+.cart a:hover {
+  background-color: #f8f7f4;
+  color: #323232;
+}
 
 .phone-header {
   float: right;
