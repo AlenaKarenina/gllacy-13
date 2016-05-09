@@ -992,7 +992,14 @@ h2.about-title {
 /*Фильтры*/
 .filters {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+.filters h1 {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
+  margin-top: -2px;
 }
 .filters-form {
   font-size: 0;
