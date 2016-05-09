@@ -991,35 +991,124 @@ h2.about-title {
 
 /*Фильтры*/
 .filters {
-  margin-bottom: 40px;
-  /*для визуального выделения элемента*/
-  outline: solid orange 1px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .filters-form {
   font-size: 0;
 }
+.filters-field {
+  padding: 9px 16px;
+  background-color: #abbcb2;
+  border-radius: 18px;
+}
+.select p,
+.range-controls p,
+.fatness p,
+.filler p {
+  display: block;
+  padding: 0;
+  padding-left: 16px;
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
 .select {
   display: inline-block;
   vertical-align: top;
-  width: 192px;
-  margin-right: 16px;
+  width: 193px;
   margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-right: 16px;
+}
+.filters-select {
+  background-color: #a9bab0;
+}
+.filters-select:hover{
+  color: #323232;
+  background-color: #ffffff;
+}
+.filters-select {
+  color: inherit;
+  padding: 0;
+  overflow: hidden;
+}
+.filters-sort-select{
+  margin: 0;
+  padding: 8px 0;
+  padding-left: 10px;
+  width: 220px;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+}
+.filters-sort-select option {
+  color: #323232;
   font-size: 14px;
   line-height: 16px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  font-weight: 400;
 }
+}
+.filters-select option {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.filters-select:hover option {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
 .range-controls {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 218px;
-  margin-right: 15px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
+  margin-right: 16px;
   font-size: 14px;
   line-height: 16px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  font-weight: 500;
 }
+.filters-range {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.scale {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #d1dad3;
+}
+.bar {
+  position: absolute;
+  left: 39px;
+  width: 98px;
+  height: 6px;
+  background-color: #f8f7f4;
+}
+.min-toggle,
+.max-toggle {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f8f7f4;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+}
+
 .fatness {
   display: inline-block;
   vertical-align: top;
@@ -1027,28 +1116,126 @@ h2.about-title {
   margin-bottom: 17px;
   font-size: 14px;
   line-height: 16px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
+.filters-fatness label{
+  position: relative;
+  margin-right: 15px;
+  padding-left: 30px;
+}
+.filters-fatness label:last-child{
+  margin-right: 0;
+}
+.filters-fatness label:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #f8f7f4;
+  border-radius: 50%;
+}
+.filters-fatness input[type="radio"]:checked + label:before {
+  padding: 3px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f8f7f4;
+  background-color: #f8f7f4;
+  background-clip: content-box;
+}
+.filters-fatness label:hover:before {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f8f7f4;
+}
+.filters-fatness input[type="radio"]:disabled + label:before,
+.filters-fatness input[type="radio"]:disabled + label:hover:before {
+  width: 18px;
+  height: 18px;
+  border-width: 1px;
+  opacity: 0.4;
+}
+.filters-fatness input[type="radio"],
+.filters-filler input[type="checkbox"] {
+  display: none;
+}
+
 .filler {
   display: inline-block;
   vertical-align: top;
   width: 702px;
-  margin-right: 15px;
+  margin-right: 16px;
   font-size: 14px;
   line-height: 16px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  font-weight: 500;
+  color: #ffffff;
 }
+.filters-filler label{
+  position: relative;
+  margin-right: 17px;
+  padding-left: 32px;
+}
+.filters-filler label:last-child{
+  margin-right: 0;
+}
+.filters-filler label:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #f8f7f4;
+  border-radius: 3px;
+}
+.filters-filler input[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 5px;
+  border-left: 2px solid #f8f7f4;
+  border-bottom: 2px solid #f8f7f4;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.filters-filler input[type="checkbox"]:checked + label:before {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f8f7f4;
+}
+.filters-filler label:hover:before {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f8f7f4;
+}
+.filters-filler input[type="checkbox"]:disabled + label:before,
+.filters-filler input[type="checkbox"]:disabled + label:hover:before {
+  width: 18px;
+  height: 18px;
+  border-width: 1px;
+  opacity: 0.4;
+}
+
 .btn-filter {
-  display: inline-block;
-  vertical-align: top;
+  margin-top: 20px;
+  padding: 6px 25px;
   width: 144px;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #abbcb2;
 }
-.fatness li,
-.filler li {
-  display: inline-block;
-  vertical-align: top;
+.btn-filter:hover {
+  background-color: #ffffff;
+  color: #353535;
+}
+.btn-filter:active {
+  background-color: #ececec;
+  box-shadow: inset 0 2px 1px 0 #696969;
+  border: none;
 }
