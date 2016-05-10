@@ -546,6 +546,10 @@ span.cart-tooltip-calclulation {
 }
 
 .phone-header {
+  display: block;
+  margin: 0;
+  margin-top: 18px;
+  padding: 0;
   float: right;
   width: 267px;
   text-align: right;
@@ -554,8 +558,13 @@ span.cart-tooltip-calclulation {
   font-weight: 700;
 }
 .phone-header span {
-  font-size: 20px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 3px;
+  font-size: 22px;
   line-height: 24px;
+  font-weight: 900;
 }
 
 /*Блок со слайдером*/
@@ -859,15 +868,21 @@ h2.about-title {
 }
 .distribution {
   float: right;
+  padding: 6px;
+  width: 548px;
+  min-height: 178px;
+  border-radius: 15px;
+  font-size: 0;
+  background-image: url("../img/e-mail-texture.png");
+}
+.distribution-wrapper {
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  width: auto;
   padding-left: 21px;
   padding-right: 15px;
   padding-top: 30px;
-  background-color: #f8f7f4;
-  width: 512px;
-  min-height: 178px;
-  border-radius: 15px;
-  border: 6px solid red;
-  font-size: 0;
+  padding-bottom: 35px;
 }
 .distribution p {
   font-size: 16px;
