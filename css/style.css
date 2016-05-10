@@ -180,17 +180,17 @@ ul {
   text-decoration: none;
 }
 .navigation-submenu li:hover {
-	background-color: #f3ddd6;
+  background-color: #f3ddd6;
 }
 .navigation-submenu li:active {
-	background-color: #e5b3a4;
+  background-color: #e5b3a4;
 }
 .navigation-menu .active {
-	border-radius: 16px;
-	background-color: #ba6f5a;
+  border-radius: 16px;
+  background-color: #ba6f5a;
 }
 .navigation-submenu .active-page {
-	background-color: #d07058;
+  background-color: #d07058;
 }
 
 .user-block {
@@ -211,7 +211,7 @@ ul {
 }
 .search-list a,
 .login-list > a,
-.cart a {
+.cart > a {
   display: block;
   margin-top: 23px;
   font-size: 14px;
@@ -366,7 +366,8 @@ ul {
   font-weight: 700;
   padding: 10px 25px;
 }
-.cart a {
+
+.cart > a {
   position: relative;
   width: 72px;
   border-radius: 25px;
@@ -374,7 +375,7 @@ ul {
   padding-bottom: 8px;
   padding-left: 45px;
 }
-.cart a:before {
+.cart > a:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -383,7 +384,7 @@ ul {
   height: 20px;
   background: url("../img/sprite.png") no-repeat -158px -10px;
 }
-.cart a:hover:before {
+.cart > a:hover:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -392,9 +393,143 @@ ul {
   height: 20px;
   background: url("../img/cart-active.svg") no-repeat;
 }
-.cart a:hover {
+.cart > a:hover {
   background-color: #f8f7f4;
   color: #323232;
+}
+/*выпадающая корзина с товарами*/
+.cart {
+  position: relative;
+}
+.cart-tooltip {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 20;
+  display: block;
+  width: 525px;
+  padding-top: 20px;
+  padding-right: 15px;
+  margin: 0;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  font-size: 0;
+  text-align: left;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+.cart:hover .cart-tooltip{
+  display: block;
+}
+
+.cart-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  font-size: 0;
+}
+.cart-item  a {
+  color: #323232;
+  text-decoration: none;
+}
+.cart-image {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 25px;
+}
+.cart-tooltip p {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #333333;
+}
+.cart-tooltip-title {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 8px;
+  padding-left: 14px;
+  font-size: 0;
+}
+.cart-tooltip-name,
+.cart-tooltip-weight,
+.cart-tooltip-calclulation,
+.cart-tooltip-cost {
+  display: inline-block;
+  vertical-align: top;
+}
+a.cart-tooltip-name,
+span.cart-tooltip-weight,
+span.cart-tooltip-cost {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+span.cart-tooltip-calclulation {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #999999;
+}
+.cart-tooltip-name {
+  width: 247px;
+}
+.cart-tooltip-calclulation {
+  margin-left: 3px;
+}
+.cart-tooltip-cost {
+  margin-left: 30px;
+}
+.btn-cart {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+.cart-right {
+  text-align: right;
+}
+.cart-summa {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 11px;
+  margin-bottom: 15px;
+}
+
+/*псевдоэлемент Удалить*/
+.cancel {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 15px;
+  outline: none;
+  border: none;
+  background: #f8f7f4;
+  font-size: 0;
+  cursor: pointer;
+}
+.cancel:before,
+.cancel:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 14px;
+  height: 1px;
+  background-color: #000;
+}
+.cancel:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.cancel:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .phone-header {
@@ -529,11 +664,11 @@ ul {
 /*Блок с хитами*/
 .hit {
   font-size: 0;
-  margin-bottom: 40px;
 }
 .item {
   display: inline-block;
   margin-right: 26px;
+  margin-bottom: 40px;
   vertical-align: top;
   width: 267px;
   text-align: center;
@@ -953,8 +1088,6 @@ h2.about-title {
 .paginator {
   font-size: 0;
   text-align: right;
-  /*для визуального выделения элемента*/
-  outline: solid lightyellow 1px;
 }
 .paginator a,
 .paginator span {
@@ -1045,6 +1178,7 @@ h2.about-title {
   color: inherit;
   padding: 0;
   overflow: hidden;
+  border: none;
 }
 .filters-sort-select{
   margin: 0;
