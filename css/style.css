@@ -375,7 +375,8 @@ ul {
   padding-bottom: 8px;
   padding-left: 45px;
 }
-.cart > a:before {
+.cart-active > a:before,
+.cart-full > a:before{
   content: "";
   position: absolute;
   top: 6px;
@@ -384,7 +385,7 @@ ul {
   height: 20px;
   background: url("../img/sprite.png") no-repeat -158px -10px;
 }
-.cart > a:hover:before {
+.cart-active > a:hover:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -393,7 +394,20 @@ ul {
   height: 20px;
   background: url("../img/cart-active.svg") no-repeat;
 }
-.cart > a:hover {
+.cart-active > a:hover {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+.cart-full > a:hover:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background: url("../img/cart-full.png") no-repeat;
+}
+.cart-full > a:hover {
   background-color: #f8f7f4;
   color: #323232;
 }
