@@ -104,6 +104,16 @@ ul {
   line-height: 18px;
   font-weight: 700;
 }
+.navigation-menu-item:hover:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255,255,255,0);
+}
 .navigation-menu-link {
   display: block;
   margin-top: 22px;
@@ -206,7 +216,7 @@ ul {
 .login-list {
   margin-right: 10px;
 }
-.search-list a,
+.search-list-handler,
 .login-header,
 .cart-handler {
   display: block;
@@ -217,14 +227,14 @@ ul {
   background-color: #9db1a5;
   text-decoration:none;
 }
-.search-list a {
+.search-list-handler {
   position: relative;
   border-radius: 18px;
   width: 33px;
   height: 33px;
   font-size: 0;
 }
-.search-list a:before {
+.search-list-handler:after {
   content: "";
   position: absolute;
   top: 9px;
@@ -233,7 +243,7 @@ ul {
   height: 17px;
   background: url(../img/sprite.png) no-repeat -408px -10px;
 }
-.search-list a:hover:before {
+.search-list-handler:hover:after {
   content: "";
   position: absolute;
   top: 9px;
@@ -242,7 +252,17 @@ ul {
   height: 17px;
   background: url(../img/search-active.svg) no-repeat;
 }
-.search-list:hover a {
+.search-list-handler:hover:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255,255,255,0);
+}
+.search-list-handler:hover {
   background-color: #f8f7f4;
 }
 .search-list {
@@ -274,6 +294,7 @@ ul {
   border-radius: 5px;
   padding: 8px 14px;
 }
+
 .login-header {
   position: relative;
   padding-right: 16px;
@@ -286,6 +307,16 @@ ul {
   background-color: #f8f7f4;
   color: #323232;
   font-weight: 500;
+}
+.login-header:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255,255,255,0);
 }
 .login-header:before {
   content: "";
@@ -371,6 +402,16 @@ ul {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 45px;
+}
+.cart-handler:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255,255,255,0);
 }
 .cart-active a:before {
   content: "";
