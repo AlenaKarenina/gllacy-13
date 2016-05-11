@@ -6,7 +6,7 @@ body {
   line-height: 22px;
   color: #ffffff;
   background-color: #849d8f;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Roboto", "Arial", sans-serif;
 }
 img {
@@ -23,19 +23,19 @@ h2 {
   font-size: 28px;
   line-height: 32px;
   color: #ffffff;
-  font-weight: normal;
+  font-weight: 400;
 }
 h3 {
   font-size: 24px;
   line-height: 28px;
   color: #323232;
-  font-weight: normal;
+  font-weight: 400;
 }
 h4 {
   font-size: 16px;
   line-height: 22px;
   color: #323232;
-  font-weight: normal;
+  font-weight: 400;
 }
 .container {
   width: 1146px;
@@ -73,9 +73,6 @@ ul {
   background-image: linear-gradient(#d74632, #e1613e);
   box-shadow: inset 0 2px 2px 0 #942718;
 }
-.line {
-  border-bottom: 1px solid #9db1a5;
-}
 
 /*header*/
 .main-header {
@@ -107,23 +104,23 @@ ul {
   line-height: 18px;
   font-weight: 700;
 }
-.navigation-menu > li > a {
+.navigation-menu-link {
   display: block;
   margin-top: 22px;
   padding: 8px 14px;
   color: #ffffff;
   text-decoration: none;
 }
-.navigation-menu > li > a:hover {
+.navigation-menu-link:hover {
   border-radius: 25px;
   color: #333333;
   text-decoration: none;
   background-color: #f7f6f3;
 }
-.navigation-menu > li > a:active {
+.navigation-menu-link:active {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
-.navigation-menu li:hover .navigation-submenu{
+.navigation-menu-item:hover .navigation-submenu{
   display:block;
 }
 .navigation-submenu {
@@ -210,8 +207,8 @@ ul {
   margin-right: 10px;
 }
 .search-list a,
-.login-list > a,
-.cart > a {
+.login-header,
+.cart-handler {
   display: block;
   margin-top: 23px;
   font-size: 14px;
@@ -268,7 +265,7 @@ ul {
   color: #999999;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
 }
-.search-list:hover .search-form{
+.search-list:hover .search-form {
   display: block;
 }
 .search-form input[type="text"] {
@@ -277,7 +274,7 @@ ul {
   border-radius: 5px;
   padding: 8px 14px;
 }
-.login-list > a{
+.login-header {
   position: relative;
   padding-right: 16px;
   padding-left: 44px;
@@ -285,12 +282,12 @@ ul {
   padding-bottom: 8px;
   border-radius: 25px;
 }
-.login-list:hover > a {
+.login-header:hover {
   background-color: #f8f7f4;
   color: #323232;
   font-weight: 500;
 }
-.login-list > a:before {
+.login-header:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -299,7 +296,7 @@ ul {
   height: 19px;
   background: url(../img/sprite.png) no-repeat -368px -10px;
 }
-.login-list:hover > a:before {
+.login-header:hover:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -367,7 +364,7 @@ ul {
   padding: 10px 25px;
 }
 
-.cart > a {
+.cart-handler {
   position: relative;
   width: 72px;
   border-radius: 25px;
@@ -375,7 +372,7 @@ ul {
   padding-bottom: 8px;
   padding-left: 45px;
 }
-.cart-active > a:before {
+.cart-active a:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -384,7 +381,7 @@ ul {
   height: 20px;
   background: url("../img/sprite.png") no-repeat -158px -10px;
 }
-.cart-active > a:hover:before {
+.cart-active a:hover:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -393,11 +390,11 @@ ul {
   height: 20px;
   background: url("../img/cart-active.svg") no-repeat;
 }
-.cart-active > a:hover {
+.cart-active a:hover {
   background-color: #f8f7f4;
   color: #323232;
 }
-.cart-full > a:before {
+.cart-full:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -406,10 +403,11 @@ ul {
   height: 20px;
   background: url("../img/cart-full.png") no-repeat;
 }
-.cart-full > a {
+.cart-full {
   background-color: #f8f7f4;
   color: #323232;
 }
+
 /*выпадающая корзина с товарами*/
 .cart {
   position: relative;
@@ -703,6 +701,10 @@ span.cart-tooltip-calclulation {
   color: #ffffff;
   text-decoration: none;
 }
+
+.image-item {
+  border: none;
+}
 .item-ice {
   position: relative;
   font-size: 0;
@@ -764,9 +766,9 @@ span.cart-tooltip-calclulation {
   z-index: 5;
   width: 258px;
   height: 405px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   padding: 0 10px;
 }
 .item:hover .item-view {
@@ -775,7 +777,7 @@ span.cart-tooltip-calclulation {
 .btn-item-view {
   position: absolute;
   bottom: 20px;
-  min-width: 200px;
+  min-width: 166px;
   transform: translate(-50%);
   padding: 10px 17px;
   font-size: 18px;
@@ -1316,7 +1318,7 @@ h2.about-title {
   border-radius: 50%;
   background-color: #f8f7f4;
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+    transform: translateY(-10px);
   cursor: pointer;
 }
 
@@ -1415,7 +1417,7 @@ h2.about-title {
   border-left: 2px solid #f8f7f4;
   border-bottom: 2px solid #f8f7f4;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .filters-filler input[type="checkbox"]:checked + label:before {
   width: 16px;
