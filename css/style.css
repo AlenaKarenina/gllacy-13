@@ -58,19 +58,18 @@ ul {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  background-color: #ed5b3d;
   border: none;
   cursor: pointer;
   border-radius: 35px;
-  background-image: linear-gradient(#f26843, #ca3824);
+  background-image: linear-gradient(to bottom, #f26843 0%, #ca3824 100%);
   box-shadow: 0 2px 2px 0 rgba(160,32,11, 0.7);
 }
 .btn:hover {
-  background-image: linear-gradient(#f58669, #ec6f5e);
+  background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 1px 2px 0 #ac1000;
 }
 .btn:active {
-  background-image: linear-gradient(#d74632, #e1613e);
+  background-image: linear-gradient(to bottom, #d74632 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px 0 #942718;
 }
 
@@ -81,9 +80,9 @@ ul {
 .logo {
   position: absolute;
   left:22px;
+  top: 10px;
   height: 63px;
   width: 153px;
-  margin-top: 10px;
 }
 .main-navigation {
   float: left;
@@ -224,7 +223,7 @@ ul {
   font-size: 14px;
   line-height: 16px;
   color:#ffffff;
-  background-color: #9db1a5;
+  background-color: rgba(255, 255, 255, 0.2);
   text-decoration:none;
 }
 .search-list-handler {
@@ -472,7 +471,6 @@ ul {
 .cart:hover .cart-tooltip{
   display: block;
 }
-
 .cart-item {
   position: relative;
   display: inline-block;
@@ -612,9 +610,9 @@ span.cart-tooltip-calclulation {
 }
 .slide {
   width: 1045px;
-  height: 256px;
+  height: 253px;
   margin: 0 auto;
-  padding-top: 268px;
+  padding-top: 277px;
 }
 .slider-controls {
   position: absolute;
@@ -656,9 +654,11 @@ span.cart-tooltip-calclulation {
   background-repeat: no-repeat;
   background-position: top;
 }
-#slide-2,
-#slide-3 {
+.slide {
   display: none;
+}
+#slide-1 {
+  display: block;
 }
 .btn-both {
   margin-top: 30px;
@@ -671,44 +671,47 @@ span.cart-tooltip-calclulation {
 
 /*Блок с баннерами*/
 .banner {
-  margin-bottom: 20px;
   font-size: 0;
 }
-.banner div {
+.banner-item {
   position: relative;
+  float: left;
+  margin-bottom: 20px;
+  width: 520px;
+  min-height: 161px;
+  padding: 0 20px;
+  padding-bottom: 68px;
+  margin-right: 26px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+.banner-item:nth-child(even) {
+  margin-right: 0;
 }
 .banner-left {
-  float: left;
   background-image: url(../img/razz.png);
+  background-color: #a30021;
   background-repeat: no-repeat;
-  width: 520px;
-  min-height: 229px;
-  padding: 0 20px;
 }
 .banner-right {
-  float: right;
   background-image: url(../img/chocolate.png);
+  background-color: #32180c;
   background-repeat: no-repeat;
-  width: 520px;
-  min-height: 229px;
-  padding: 0 20px;
 }
-.banner-left h2,
-.banner-right h2 {
+.banner-item h2 {
   font-size: 35px;
-  line-height: 41px;
+  line-height: 40px;
   font-weight: 700;
   margin: 0;
   margin-top: 17px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
-.banner-left p,
-.banner-right p{
+.banner-item p {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 43px;
 }
 .btn-primary {
   position: absolute;
@@ -742,49 +745,61 @@ span.cart-tooltip-calclulation {
   color: #ffffff;
   text-decoration: none;
 }
-
-.image-item {
-  border: none;
+.image-item-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 267px;
+  width: 267px;
+  text-decoration: none;
 }
 .item-ice {
   position: relative;
-  font-size: 0;
   z-index: 10;
 }
 .price {
-  position: relative;
+  position: absolute;
+  bottom: 8px;
+  font-size: 0;
 }
 .price-value {
-  position: absolute;
-  top: -68px;
-  left: -2px;;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   text-shadow: 0 1px 5px #6d7f76;
 }
 .price-kg {
-  position: absolute;
-  top: -64px;
-  left: 112px;
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
   text-shadow: 0 1px 5px #6d7f76;
 }
+span.rub {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 37px;
+  margin-right: 3px;
+}
 .rub:after {
   content: "";
   position: absolute;
-  top: -62px;
-  left: 78px;
+  bottom: -5px;
+  left: 3px;
   width: 32px;
   height: 37px;
   background: url(../img/sprite.png) no-repeat -512px -10px;
 }
+.hit-icon {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+}
 .hit-icon:before {
   content: "";
   position: absolute;
-  top: 23px;
+  top: 0;
   left: 0;
   width: 61px;
   height: 61px;
@@ -802,15 +817,16 @@ span.cart-tooltip-calclulation {
   display: none;
   content: "";
   position: absolute;
-  top: -6px;
-  left: -6px;
-  z-index: 5;
-  width: 258px;
-  height: 405px;
+  top: -10px;
+  left: -10px;
+  z-index: 11;
+  width: 100%;
+  min-height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   padding: 0 10px;
+  padding-bottom: 75px;
 }
 .item:hover .item-view {
   display: block;
@@ -825,16 +841,18 @@ span.cart-tooltip-calclulation {
   line-height: 24px;
   font-weight: 700;
 }
+
 /*Блок с информацией о магазине*/
 .about {
   padding: 20px;
-  padding-bottom: 14px;
+  padding-bottom: 25px;
+  background-color: #ebe0c6;
   background-image: url(../img/texture-wafer.png);
   margin-bottom: 40px;
   border-radius: 15px;
   color: #323232;
 }
-h2.about-title {
+.about-title {
   margin: 5px 0;
   font-size: 24px;
   line-height: 30px;
@@ -842,10 +860,10 @@ h2.about-title {
   color: #323232;
   padding: 0;
 }
-.about ul {
+.about-advantages {
   font-size: 0;
 }
-.about li {
+.about-advantages-item {
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -855,17 +873,17 @@ h2.about-title {
   line-height: 22px;
   font-weight: 400;
 }
-.about li:nth-child(2n) {
+.about-advantages-item:nth-child(2n) {
   margin-right: 0;
 }
-.about li:nth-child(3),
-.about li:nth-child(4) {
-  margin-top: -10px;
-  margin-bottom: -5px;
+.about-advantages-item:nth-child(3),
+.about-advantages-item:nth-child(4) {
+  margin-top: 4px;
 }
-.about p {
-  padding: 0;
-  padding-left: 57px;
+.about-advantages-item p {
+  margin: 0;
+  margin-left: 56px;
+  margin-top: 16px;
 }
 .icon-icecream:before {
   content: "";
@@ -908,15 +926,22 @@ h2.about-title {
 .blog {
   margin-bottom: 40px;
 }
-.news {
+.blog-item {
   float: left;
+  margin-right: 26px;
+}
+.blog-item:nth-child(even) {
+  margin-right: 0;
+}
+.news {
   background: #ffffff url(../img/blog-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 289px;
   min-height: 197px;
   padding-top: 23px;
   padding-left: 21px;
   padding-right: 250px;
-  margin: 0;
   border: none;
   border-radius: 15px;
   font-size: 0;
@@ -929,18 +954,20 @@ h2.about-title {
   margin: 0;
   padding: 0;
 }
-.news a {
+.news-blog {
   display: inline-block;
   vertical-align: top;
   margin-top: 2px;
-  text-decoration: underline;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #323232;
+  text-decoration: underline;
+}
+.news-blog:hover {
+  color: #e84d37;
 }
 .distribution {
-  float: right;
   padding: 6px;
   width: 548px;
   min-height: 178px;
@@ -967,6 +994,7 @@ h2.about-title {
 }
 .distribution-form {
   margin-top: 40px;
+  font-size: 0;
 }
 .distribution input {
   display: inline-block;
@@ -976,9 +1004,10 @@ h2.about-title {
   padding-top: 11px;
   padding-bottom: 10px;
   padding-left: 14px;
+  padding-right: 14px;
   border-radius: 5px;
   border: 1px solid #a0a0a0;
-  width: 352px;
+  width: 338px;
   margin-right: 10px;
   font-size: 16px;
   line-height: 20px;
@@ -993,16 +1022,19 @@ h2.about-title {
 }
 /*Блок с картой*/
 .map-contacts {
-  width: auto;
-  min-height: 310px;
-  padding: 60px 0;
-  background: url(../img/map.jpg) no-repeat center;
+  position: relative;
+}
+.map-wrapper {
+  height: 430px;
+  background: #fffff0 url(../img/map.jpg) no-repeat center;
 }
 .map-address {
-  float: right;
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  margin-left: 270px;
   background-color: #fefefe;
   width: 277px;
-  margin-right: 0;
   padding-left: 25px;
   padding-top: 29px;
   padding-bottom: 30px;
@@ -1046,9 +1078,11 @@ h2.about-title {
   font-weight: 700;
   margin-top: 26px;
 }
+
 /*footer*/
 .footer {
   margin-top: 0px;
+  border-top: 1px solid #a9bbb1;
 }
 .footer-social {
   float: left;
@@ -1058,7 +1092,7 @@ h2.about-title {
 }
 .footer-info {
   float: left;
-  margin-top: 33px;
+  padding-top: 33px;
   font-size: 0;
   width: 400px;
   margin-left: 200px;
@@ -1083,17 +1117,12 @@ h2.about-title {
 .footer-info li:nth-child(1) {
   font-weight: 700;
 }
-.footer-info a {
+.footer-link {
   font-size: 13px;
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid #9db1a5;
-}
-.footer-info a:hover,
-.footer-info a:active {
-  color: #ffbc9e;
-  border-bottom: 1px solid #ffbc9e;
 }
 .like:before {
   content: "";
@@ -1110,20 +1139,22 @@ h2.about-title {
   font-size: 12px;
   line-height: 16px;
 }
-.footer-copyright a {
+.footer-link {
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid #9db1a5;
 }
-.footer-copyright a:hover,
-.footer-copyright a:active {
+.footer-link:hover,
+.footer-link:active {
   color: #ffbc9e;
   border-bottom: 1px solid #ffbc9e;
 }
-.copyright-logo img {
-  border-bottom: none;
+.copyright-logo-link {
+  display: block;
+  border: none;
+  background-color: transparent;
 }
 .social-btn {
   display: inline-block;
@@ -1147,7 +1178,7 @@ h2.about-title {
 }*/
 
 .social-btn-tw {
-  background: url(../img/sprite.png) no-repeat -665px -10px;
+  background: url(../img/sprite.png) no-repeat -666px -10px;
 }
 .social-btn-inst {
   background: url(../img/sprite.png) no-repeat -614px -10px;
@@ -1161,8 +1192,9 @@ h2.about-title {
 
 /*Хлебные крошки*/
 .breadcrumbs {
+  float: left;
   font-size: 0;
-  margin-top: 18px;
+  margin-top: 44px;
 }
 .breadcrumbs li {
   position: relative;
@@ -1185,6 +1217,7 @@ h2.about-title {
   color: #ffbc9e;
   border-bottom: 1px solid #ffbc9e;
 }
+
 /*Переключатель страниц*/
 .paginator {
   font-size: 0;
@@ -1233,7 +1266,9 @@ h2.about-title {
   padding: 0;
   margin: 0;
   margin-bottom: 27px;
-  margin-top: -2px;
+  font-size: 35px;
+  line-height: 37px;
+  font-weight: 700;
 }
 .filters-form {
   font-size: 0;
@@ -1251,68 +1286,75 @@ h2.about-title {
   padding: 0;
   padding-left: 16px;
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
 }
+
 .select {
-  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 193px;
   margin-bottom: 17px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
   margin-right: 16px;
-}
-.filters-select {
-  background-color: #a9bab0;
 }
 .filters-select:hover{
   color: #323232;
   background-color: #ffffff;
 }
 .filters-select {
+  position: relative;
+  background-color: #a9bab0;
   color: inherit;
   padding: 0;
   overflow: hidden;
   border: none;
-}
+}/*обертка селекта */
+
 .filters-sort-select{
-  margin: 0;
-  padding: 8px 0;
-  padding-left: 10px;
-  width: 220px;
-  background-color: transparent;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 400;
   color: inherit;
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 35px;
   border: none;
-}
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: .01px;
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none!important;
+} /*селект*/
+
 .filters-sort-select option {
   color: #323232;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
 }
-}
 .filters-select option {
   color: #ffffff;
+  background-color: #a9bab0;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  padding-left: 20px;
 }
 .filters-select:hover option {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
+  background-color: #ffffff;
 }
 .filters-select:after {
   content: " ";
   position: absolute;
-  top: 37px;
+  top: 50%;
   right: 15px;
   border: 4px solid transparent;
   border-top-color: #ffffff;
@@ -1368,10 +1410,11 @@ h2.about-title {
   vertical-align: top;
   width: 414px;
   margin-bottom: 17px;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0;
 }
 .filters-fatness label{
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   margin-right: 15px;
   padding-left: 30px;
@@ -1422,12 +1465,12 @@ h2.about-title {
   vertical-align: top;
   width: 702px;
   margin-right: 16px;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
+  font-size: 0;
   color: #ffffff;
 }
 .filters-filler label{
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   margin-right: 17px;
   padding-left: 32px;
