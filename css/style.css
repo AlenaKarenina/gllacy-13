@@ -829,8 +829,8 @@ body > input[type=radio] {
   z-index: 12;
 }
 .item-ice-link:hover {
-  color: #ffcc99;
-  border-bottom: 1px solid #ffcc99;
+  color: rgba(255, 188, 158, 0.9);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.9);
 }
 .image-item-link {
   display: block;
