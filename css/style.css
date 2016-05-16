@@ -151,6 +151,9 @@ ul {
   background-color: #ba6f5a;
   color: #ffffff;
 }
+.navigation-menu .active > a:hover {
+  color: #ffffff;
+}
 /*подчеркивание у ссылки*/
 .underline:after{
   content: "";
