@@ -128,8 +128,6 @@ ul {
   text-decoration: none;
   padding-top: 8px;
   padding-bottom: 8px;
-  /*padding-left: 14px;
-  padding-right: 14px;*/
 }
 .navigation-menu-item:hover {
   border-radius: 25px;
@@ -137,7 +135,7 @@ ul {
   background-color: #f7f6f3;
   color: #333333;
 }
-.navigation-menu-item a:hover {
+.navigation-menu-item:hover a {
   color: #333333;
 }
 .navigation-menu-item:active {
@@ -151,7 +149,7 @@ ul {
   background-color: #ba6f5a;
   color: #ffffff;
 }
-.navigation-menu .active > a:hover {
+.navigation-menu .active:hover > a {
   color: #ffffff;
 }
 /*подчеркивание у ссылки*/
