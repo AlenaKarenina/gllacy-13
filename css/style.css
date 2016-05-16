@@ -1835,4 +1835,5 @@ textarea:focus {
   right: 0;
   background-color: #323232;
   opacity: .3;
+  z-index: 80;
 }
