@@ -430,6 +430,7 @@ ul {
   line-height: 24px;
   font-weight: 700;
   padding: 10px 25px;
+  outline: none;
 }
 
 .cart-handler {
@@ -578,6 +579,7 @@ span.cart-tooltip-calclulation {
   font-weight: 700;
   padding: 10px 15px;
   margin-bottom: 20px;
+  outline: none;
 }
 .cart-right {
   text-align: right;
@@ -1106,6 +1108,7 @@ span.rub {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  outline: none;
 }
 /*Блок с картой*/
 .map-contacts {
@@ -1683,6 +1686,7 @@ span.page-active {
   color: #ffffff;
   background-color: #abbcb2;
   cursor: pointer;
+  outline: none;
   }
 .btn-filter:hover {
   background-color: #ffffff;
