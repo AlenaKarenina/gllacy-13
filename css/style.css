@@ -1811,7 +1811,7 @@ textarea:focus {
   color: #5b9ddf;
 }
 .feedback-form input[type="text"]:focus + label,
-.feedback-form taxtarea:focus + label {
+.feedback-form textarea:focus + label {
   display: block;
 }
 .feedback-wrapper input[type="text"]:focus,
