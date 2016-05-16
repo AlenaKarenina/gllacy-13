@@ -252,12 +252,18 @@
         <div class="popup-feedback clearfix">
           <h3>Мы обязательно вам ответим!</h3>
           <form class="feedback-form" action="#" method="post">
-            <label for="feedback-name">Как вас зовут?</label>
-            <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?"><br>
-            <label for="feedback-email">Ваша почта для ответа?</label>
-            <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"><br>
-            <label for="feedback-comment">Напишите что-нибудь...</label>
-            <textarea name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..."></textarea><br>
+            <div class="feedback-wrapper">
+              <label for="feedback-name">Как вас зовут?</label>
+              <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?"><br>
+            </div>
+            <div class="feedback-wrapper">
+              <label for="feedback-email">Ваша почта для ответа?</label>
+              <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"><br>
+            </div>
+            <div class="feedback-wrapper">
+              <label for="feedback-comment">Напишите что-нибудь...</label>
+              <textarea name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..."></textarea><br>
+            </div>
             <button class="btn btn-popup">Отправить</button>
             <a class="btn-close" href="#">Закрыть</a>
           </form>

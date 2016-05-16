@@ -118,6 +118,8 @@ ul {
 .navigation-menu-item {
   position: relative;
   margin-top: 22px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 .navigation-menu-link {
   display: block;
@@ -125,8 +127,8 @@ ul {
   text-decoration: none;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 14px;
-  padding-right: 14px;
+  /*padding-left: 14px;
+  padding-right: 14px;*/
 }
 .navigation-menu-link:hover {
   border-radius: 25px;
@@ -1541,8 +1543,8 @@ span.page-active {
 }
 .min-toggle:hover,
 .max-toggle:hover {
-  width: 21px;
-  height: 21px;
+  width: 22px;
+  height: 22px;
 }
 .fatness {
   display: inline-block;
@@ -1691,7 +1693,7 @@ span.page-active {
 
 /*форма обратной связи*/
 .popup-feedback {
-  display: none;
+  /*display: none;*/
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1795,30 +1797,26 @@ textarea:focus {
   border: 1px solid #8fbdec;
   box-shadow: inset 0 0 0 1px #8fbdec;
 }
-
-.feedback-form label {
+.feedback-wrapper {
   position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: 400;
-  color: #5b9ddf;
 }
-.feedback-form label:before {
+.feedback-form label {
   display: none;
   position: absolute;
-  content: "";
-  top: -5px;
+  top: -15px;
   left: 15px;
   font-size: 11px;
   line-height: 13px;
   font-weight: 400;
   color: #5b9ddf;
 }
-.feedback-form input[type="text"]:focus + label:before,
-.feedback-form textarea:focus + label:before {
+.feedback-form input[type="text"]:focus + label,
+.feedback-form taxtarea:focus + label {
   display: block;
+}
+.feedback-wrapper input[type="text"]:focus,
+.feedback-wrapper textarea:focus {
+  color: #323232;
+  font-weight: 700;
 }
 
