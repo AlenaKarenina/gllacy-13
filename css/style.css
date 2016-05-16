@@ -1826,4 +1826,13 @@ textarea:focus {
   color: #323232;
   font-weight: 700;
 }
-
+.color-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #323232;
+  opacity: .3;
+}
